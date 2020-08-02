@@ -1,0 +1,82 @@
+﻿@using System.Security.Claims
+@using TheLifeTimeTalents.Services
+@{var identity = Context.User.Identity as ClaimsIdentity;}
+<div class="form-group">
+    <label for="uname">Username:</label>
+    <input type="text" class="form-control" placeholder="Username" id="uname">
+</div>
+<div class="form-group">
+    <label for="email">Email address:</label>
+    <input type="email" class="form-control" placeholder="Email" id="email">
+</div>
+<div class="form-group">
+    <label for="status">Status:</label>
+    <input type="text" class="form-control" placeholder="Status" id="status" disabled>
+    <div class="input-group-append">
+        @if (identity.FindFirst("RoleName").ToString().Contains("Registered Free Plan User"))
+        {
+            <button class="btn btn-success">Upgrade</button>
+        }
+    </div>
+</div>
+
+<button type="submit" class="btn btn-primary">Edit</button>
+
+<div class="modal fade" id="addModal" tabindex="-1" role="dialog" aria-labelledby="addModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content" style="border:unset;">
+            <div class="modal-header" id="modalHeader">
+                <h4 class="modal-title" id="addModalLabel">Add Customer</h4>
+            </div>
+            <div class="modal-body" id="modalBody">
+                <p>Upgrade to be able comment on peoples post.</p>
+                <form asp-controller="Payment" asp-action="Subscribe" method="post" id="payment-form" style="width:100%;">
+                    <div class="container">
+                        <div class="form-row">
+                            <label for="card-element">
+                                Credit or debit card
+                            </label>
+                            <div id="card-element" style="width:100%;">
+                                <!-- A Stripe Element will be inserted here. -->
+                            </div>
+
+                            <!-- Used to display form errors. -->
+                            <div id="card-errors" role="alert"></div>
+                        </div>
+                        <div class="form-row">
+                            <label for="email">
+                                Email
+                            </label>
+                            <div style="width:100%;">
+                                <input name="cardEmail" id="cardEmail" />
+                            </div>
+                        </div>
+                        <button>Make Subscription</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+@section Scripts{
+    <script>
+        var s = "@identity.FindFirst("ID")";
+        var userId = s.replace(/^\D+/g, '');
+
+        loadData();
+
+        function loadData() {
+            $.ajax({
+                method: 'GET',
+                url: `/API/User/${userId}`,
+                dataType: 'json',
+            }).done(function (data) {
+                console.log(data);
+                $('#uname').val(data.response.username);
+                $('#email').val(data.response.email);
+                $('#cardEmail').val(data.response.email);
+                $('#status').val(data.response.role.roleName);
+            })
+        }
+    </script>
+}

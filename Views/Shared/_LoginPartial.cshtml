@@ -1,0 +1,31 @@
+﻿@using System.Security.Claims
+@using TheLifeTimeTalents.Services
+@{var identity = Context.User.Identity as ClaimsIdentity; }
+@if (identity.IsAuthenticated)
+{
+    <!-- This is a <form> tag section which has a submit type control that shall call the Account controller instance's Logout action method-->
+    
+    <form asp-area="" asp-controller="Home" asp-action="Logout" method="post" id="logoutForm" class="navbar-right">
+        <ul class="nav navbar-nav navbar-right">
+            <li class="nav-item">
+                <a class="nav-link" asp-controller="Home" asp-action="ViewAccount">Account</a>
+            </li>
+            <li>
+                <button type="submit" class="btn btn-info">Log out</button>
+            </li>
+        </ul>
+    </form>
+}
+else
+{
+    <ul class="nav navbar-nav flex-row justify-content-between ml-auto">
+        <li class="nav-item">
+            <a class="nav-link" asp-controller="Home" asp-action="Register">Sign up</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="/Home/Login">Sign in</a>
+        </li>
+
+    </ul>
+}
+

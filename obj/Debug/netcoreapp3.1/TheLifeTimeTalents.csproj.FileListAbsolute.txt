@@ -1,0 +1,234 @@
+C:\Users\Husni Haron\source\repos\TheLifeTimeTalents\bin\Debug\netcoreapp3.1\appsettings.Development.json
+C:\Users\Husni Haron\source\repos\TheLifeTimeTalents\bin\Debug\netcoreapp3.1\appsettings.json
+C:\Users\Husni Haron\source\repos\TheLifeTimeTalents\bin\Debug\netcoreapp3.1\Properties\launchSettings.json
+C:\Users\Husni Haron\source\repos\TheLifeTimeTalents\bin\Debug\netcoreapp3.1\TheLifeTimeTalents.exe
+C:\Users\Husni Haron\source\repos\TheLifeTimeTalents\obj\Debug\netcoreapp3.1\TheLifeTimeTalents.csprojAssemblyReference.cache
+C:\Users\Husni Haron\source\repos\TheLifeTimeTalents\obj\Debug\netcoreapp3.1\TheLifeTimeTalents.AssemblyInfoInputs.cache
+C:\Users\Husni Haron\source\repos\TheLifeTimeTalents\obj\Debug\netcoreapp3.1\TheLifeTimeTalents.AssemblyInfo.cs
+C:\Users\Husni Haron\source\repos\TheLifeTimeTalents\obj\Debug\netcoreapp3.1\TheLifeTimeTalents.RazorAssemblyInfo.cache
+C:\Users\Husni Haron\source\repos\TheLifeTimeTalents\obj\Debug\netcoreapp3.1\TheLifeTimeTalents.RazorAssemblyInfo.cs
+C:\Users\Husni Haron\source\repos\TheLifeTimeTalents\obj\Debug\netcoreapp3.1\TheLifeTimeTalents.TagHelpers.input.cache
+C:\Users\Husni Haron\source\repos\TheLifeTimeTalents\obj\Debug\netcoreapp3.1\TheLifeTimeTalents.TagHelpers.output.cache
+C:\Users\Husni Haron\source\repos\TheLifeTimeTalents\obj\Debug\netcoreapp3.1\TheLifeTimeTalents.RazorCoreGenerate.cache
+C:\Users\Husni Haron\source\repos\TheLifeTimeTalents\obj\Debug\netcoreapp3.1\Razor\Views\Home\Index.cshtml.g.cs
+C:\Users\Husni Haron\source\repos\TheLifeTimeTalents\obj\Debug\netcoreapp3.1\Razor\Views\Home\Privacy.cshtml.g.cs
+C:\Users\Husni Haron\source\repos\TheLifeTimeTalents\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Error.cshtml.g.cs
+C:\Users\Husni Haron\source\repos\TheLifeTimeTalents\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_Layout.cshtml.g.cs
+C:\Users\Husni Haron\source\repos\TheLifeTimeTalents\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
+C:\Users\Husni Haron\source\repos\TheLifeTimeTalents\obj\Debug\netcoreapp3.1\Razor\Views\_ViewImports.cshtml.g.cs
+C:\Users\Husni Haron\source\repos\TheLifeTimeTalents\obj\Debug\netcoreapp3.1\Razor\Views\_ViewStart.cshtml.g.cs
+C:\Users\Husni Haron\source\repos\TheLifeTimeTalents\obj\Debug\netcoreapp3.1\TheLifeTimeTalents.RazorTargetAssemblyInfo.cache
+C:\Users\Husni Haron\source\repos\TheLifeTimeTalents\obj\Debug\netcoreapp3.1\TheLifeTimeTalents.RazorTargetAssemblyInfo.cs
+C:\Users\Husni Haron\source\repos\TheLifeTimeTalents\obj\Debug\netcoreapp3.1\staticwebassets\TheLifeTimeTalents.StaticWebAssets.Manifest.cache
+C:\Users\Husni Haron\source\repos\TheLifeTimeTalents\obj\Debug\netcoreapp3.1\staticwebassets\TheLifeTimeTalents.StaticWebAssets.xml
+C:\Users\Husni Haron\source\repos\TheLifeTimeTalents\bin\Debug\netcoreapp3.1\TheLifeTimeTalents.deps.json
+C:\Users\Husni Haron\source\repos\TheLifeTimeTalents\bin\Debug\netcoreapp3.1\TheLifeTimeTalents.runtimeconfig.json
+C:\Users\Husni Haron\source\repos\TheLifeTimeTalents\bin\Debug\netcoreapp3.1\TheLifeTimeTalents.runtimeconfig.dev.json
+C:\Users\Husni Haron\source\repos\TheLifeTimeTalents\bin\Debug\netcoreapp3.1\TheLifeTimeTalents.dll
+C:\Users\Husni Haron\source\repos\TheLifeTimeTalents\bin\Debug\netcoreapp3.1\TheLifeTimeTalents.pdb
+C:\Users\Husni Haron\source\repos\TheLifeTimeTalents\bin\Debug\netcoreapp3.1\TheLifeTimeTalents.Views.dll
+C:\Users\Husni Haron\source\repos\TheLifeTimeTalents\bin\Debug\netcoreapp3.1\TheLifeTimeTalents.Views.pdb
+C:\Users\Husni Haron\source\repos\TheLifeTimeTalents\bin\Debug\netcoreapp3.1\System.Net.Http.Formatting.dll
+C:\Users\Husni Haron\source\repos\TheLifeTimeTalents\bin\Debug\netcoreapp3.1\System.Web.Http.dll
+C:\Users\Husni Haron\source\repos\TheLifeTimeTalents\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+C:\Users\Husni Haron\source\repos\TheLifeTimeTalents\bin\Debug\netcoreapp3.1\Newtonsoft.Json.Bson.dll
+C:\Users\Husni Haron\source\repos\TheLifeTimeTalents\obj\Debug\netcoreapp3.1\TheLifeTimeTalents.csproj.CoreCompileInputs.cache
+C:\Users\Husni Haron\source\repos\TheLifeTimeTalents\obj\Debug\netcoreapp3.1\TheLifeTimeTalents.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Husni Haron\source\repos\TheLifeTimeTalents\obj\Debug\netcoreapp3.1\TheLifeTimeTalents.Views.pdb
+C:\Users\Husni Haron\source\repos\TheLifeTimeTalents\obj\Debug\netcoreapp3.1\TheLifeTimeTalents.csproj.CopyComplete
+C:\Users\Husni Haron\source\repos\TheLifeTimeTalents\obj\Debug\netcoreapp3.1\TheLifeTimeTalents.dll
+C:\Users\Husni Haron\source\repos\TheLifeTimeTalents\obj\Debug\netcoreapp3.1\TheLifeTimeTalents.pdb
+C:\Users\Husni Haron\source\repos\TheLifeTimeTalents\obj\Debug\netcoreapp3.1\TheLifeTimeTalents.genruntimeconfig.cache
+D:\Singapore_Polytechnic\Year3\Semester1\CSC\Assignment2\TheLifeTimeTalents(v3)\TheLifeTimeTalents\bin\Debug\netcoreapp3.1\appsettings.Development.json
+D:\Singapore_Polytechnic\Year3\Semester1\CSC\Assignment2\TheLifeTimeTalents(v3)\TheLifeTimeTalents\bin\Debug\netcoreapp3.1\appsettings.json
+D:\Singapore_Polytechnic\Year3\Semester1\CSC\Assignment2\TheLifeTimeTalents(v3)\TheLifeTimeTalents\bin\Debug\netcoreapp3.1\Properties\launchSettings.json
+D:\Singapore_Polytechnic\Year3\Semester1\CSC\Assignment2\TheLifeTimeTalents(v3)\TheLifeTimeTalents\bin\Debug\netcoreapp3.1\TheLifeTimeTalents.exe
+D:\Singapore_Polytechnic\Year3\Semester1\CSC\Assignment2\TheLifeTimeTalents(v3)\TheLifeTimeTalents\bin\Debug\netcoreapp3.1\TheLifeTimeTalents.deps.json
+D:\Singapore_Polytechnic\Year3\Semester1\CSC\Assignment2\TheLifeTimeTalents(v3)\TheLifeTimeTalents\bin\Debug\netcoreapp3.1\TheLifeTimeTalents.runtimeconfig.json
+D:\Singapore_Polytechnic\Year3\Semester1\CSC\Assignment2\TheLifeTimeTalents(v3)\TheLifeTimeTalents\bin\Debug\netcoreapp3.1\TheLifeTimeTalents.runtimeconfig.dev.json
+D:\Singapore_Polytechnic\Year3\Semester1\CSC\Assignment2\TheLifeTimeTalents(v3)\TheLifeTimeTalents\bin\Debug\netcoreapp3.1\TheLifeTimeTalents.dll
+D:\Singapore_Polytechnic\Year3\Semester1\CSC\Assignment2\TheLifeTimeTalents(v3)\TheLifeTimeTalents\bin\Debug\netcoreapp3.1\TheLifeTimeTalents.pdb
+D:\Singapore_Polytechnic\Year3\Semester1\CSC\Assignment2\TheLifeTimeTalents(v3)\TheLifeTimeTalents\bin\Debug\netcoreapp3.1\TheLifeTimeTalents.Views.dll
+D:\Singapore_Polytechnic\Year3\Semester1\CSC\Assignment2\TheLifeTimeTalents(v3)\TheLifeTimeTalents\bin\Debug\netcoreapp3.1\TheLifeTimeTalents.Views.pdb
+D:\Singapore_Polytechnic\Year3\Semester1\CSC\Assignment2\TheLifeTimeTalents(v3)\TheLifeTimeTalents\bin\Debug\netcoreapp3.1\System.Net.Http.Formatting.dll
+D:\Singapore_Polytechnic\Year3\Semester1\CSC\Assignment2\TheLifeTimeTalents(v3)\TheLifeTimeTalents\bin\Debug\netcoreapp3.1\System.Web.Http.dll
+D:\Singapore_Polytechnic\Year3\Semester1\CSC\Assignment2\TheLifeTimeTalents(v3)\TheLifeTimeTalents\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+D:\Singapore_Polytechnic\Year3\Semester1\CSC\Assignment2\TheLifeTimeTalents(v3)\TheLifeTimeTalents\bin\Debug\netcoreapp3.1\Newtonsoft.Json.Bson.dll
+D:\Singapore_Polytechnic\Year3\Semester1\CSC\Assignment2\TheLifeTimeTalents(v3)\TheLifeTimeTalents\obj\Debug\netcoreapp3.1\TheLifeTimeTalents.csprojAssemblyReference.cache
+D:\Singapore_Polytechnic\Year3\Semester1\CSC\Assignment2\TheLifeTimeTalents(v3)\TheLifeTimeTalents\obj\Debug\netcoreapp3.1\TheLifeTimeTalents.AssemblyInfoInputs.cache
+D:\Singapore_Polytechnic\Year3\Semester1\CSC\Assignment2\TheLifeTimeTalents(v3)\TheLifeTimeTalents\obj\Debug\netcoreapp3.1\TheLifeTimeTalents.AssemblyInfo.cs
+D:\Singapore_Polytechnic\Year3\Semester1\CSC\Assignment2\TheLifeTimeTalents(v3)\TheLifeTimeTalents\obj\Debug\netcoreapp3.1\TheLifeTimeTalents.RazorAssemblyInfo.cache
+D:\Singapore_Polytechnic\Year3\Semester1\CSC\Assignment2\TheLifeTimeTalents(v3)\TheLifeTimeTalents\obj\Debug\netcoreapp3.1\TheLifeTimeTalents.RazorAssemblyInfo.cs
+D:\Singapore_Polytechnic\Year3\Semester1\CSC\Assignment2\TheLifeTimeTalents(v3)\TheLifeTimeTalents\obj\Debug\netcoreapp3.1\TheLifeTimeTalents.TagHelpers.input.cache
+D:\Singapore_Polytechnic\Year3\Semester1\CSC\Assignment2\TheLifeTimeTalents(v3)\TheLifeTimeTalents\obj\Debug\netcoreapp3.1\TheLifeTimeTalents.TagHelpers.output.cache
+D:\Singapore_Polytechnic\Year3\Semester1\CSC\Assignment2\TheLifeTimeTalents(v3)\TheLifeTimeTalents\obj\Debug\netcoreapp3.1\TheLifeTimeTalents.RazorCoreGenerate.cache
+D:\Singapore_Polytechnic\Year3\Semester1\CSC\Assignment2\TheLifeTimeTalents(v3)\TheLifeTimeTalents\obj\Debug\netcoreapp3.1\Razor\Views\Home\Index.cshtml.g.cs
+D:\Singapore_Polytechnic\Year3\Semester1\CSC\Assignment2\TheLifeTimeTalents(v3)\TheLifeTimeTalents\obj\Debug\netcoreapp3.1\Razor\Views\Home\Privacy.cshtml.g.cs
+D:\Singapore_Polytechnic\Year3\Semester1\CSC\Assignment2\TheLifeTimeTalents(v3)\TheLifeTimeTalents\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Error.cshtml.g.cs
+D:\Singapore_Polytechnic\Year3\Semester1\CSC\Assignment2\TheLifeTimeTalents(v3)\TheLifeTimeTalents\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_Layout.cshtml.g.cs
+D:\Singapore_Polytechnic\Year3\Semester1\CSC\Assignment2\TheLifeTimeTalents(v3)\TheLifeTimeTalents\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
+D:\Singapore_Polytechnic\Year3\Semester1\CSC\Assignment2\TheLifeTimeTalents(v3)\TheLifeTimeTalents\obj\Debug\netcoreapp3.1\Razor\Views\_ViewImports.cshtml.g.cs
+D:\Singapore_Polytechnic\Year3\Semester1\CSC\Assignment2\TheLifeTimeTalents(v3)\TheLifeTimeTalents\obj\Debug\netcoreapp3.1\Razor\Views\_ViewStart.cshtml.g.cs
+D:\Singapore_Polytechnic\Year3\Semester1\CSC\Assignment2\TheLifeTimeTalents(v3)\TheLifeTimeTalents\obj\Debug\netcoreapp3.1\TheLifeTimeTalents.RazorTargetAssemblyInfo.cache
+D:\Singapore_Polytechnic\Year3\Semester1\CSC\Assignment2\TheLifeTimeTalents(v3)\TheLifeTimeTalents\obj\Debug\netcoreapp3.1\TheLifeTimeTalents.RazorTargetAssemblyInfo.cs
+D:\Singapore_Polytechnic\Year3\Semester1\CSC\Assignment2\TheLifeTimeTalents(v3)\TheLifeTimeTalents\obj\Debug\netcoreapp3.1\TheLifeTimeTalents.Views.pdb
+D:\Singapore_Polytechnic\Year3\Semester1\CSC\Assignment2\TheLifeTimeTalents(v3)\TheLifeTimeTalents\obj\Debug\netcoreapp3.1\TheLifeTimeTalents.csproj.CopyComplete
+D:\Singapore_Polytechnic\Year3\Semester1\CSC\Assignment2\TheLifeTimeTalents(v3)\TheLifeTimeTalents\obj\Debug\netcoreapp3.1\staticwebassets\TheLifeTimeTalents.StaticWebAssets.Manifest.cache
+D:\Singapore_Polytechnic\Year3\Semester1\CSC\Assignment2\TheLifeTimeTalents(v3)\TheLifeTimeTalents\obj\Debug\netcoreapp3.1\staticwebassets\TheLifeTimeTalents.StaticWebAssets.xml
+D:\Singapore_Polytechnic\Year3\Semester1\CSC\Assignment2\TheLifeTimeTalents(v3)\TheLifeTimeTalents\obj\Debug\netcoreapp3.1\TheLifeTimeTalents.dll
+D:\Singapore_Polytechnic\Year3\Semester1\CSC\Assignment2\TheLifeTimeTalents(v3)\TheLifeTimeTalents\obj\Debug\netcoreapp3.1\TheLifeTimeTalents.pdb
+D:\Singapore_Polytechnic\Year3\Semester1\CSC\Assignment2\TheLifeTimeTalents(v3)\TheLifeTimeTalents\obj\Debug\netcoreapp3.1\TheLifeTimeTalents.genruntimeconfig.cache
+D:\Singapore_Polytechnic\Year3\Semester1\CSC\Assignment2\TheLifeTimeTalents(v3)\TheLifeTimeTalents\obj\Debug\netcoreapp3.1\TheLifeTimeTalents.csproj.CoreCompileInputs.cache
+D:\Singapore_Polytechnic\Year3\Semester1\CSC\Assignment2\TheLifeTimeTalents(v3)\TheLifeTimeTalents\obj\Debug\netcoreapp3.1\TheLifeTimeTalents.MvcApplicationPartsAssemblyInfo.cache
+W:\CSC\TheLifeTimeTalents(v3)\TheLifeTimeTalents\bin\Debug\netcoreapp3.1\appsettings.Development.json
+W:\CSC\TheLifeTimeTalents(v3)\TheLifeTimeTalents\bin\Debug\netcoreapp3.1\appsettings.json
+W:\CSC\TheLifeTimeTalents(v3)\TheLifeTimeTalents\bin\Debug\netcoreapp3.1\Properties\launchSettings.json
+W:\CSC\TheLifeTimeTalents(v3)\TheLifeTimeTalents\bin\Debug\netcoreapp3.1\TheLifeTimeTalents.exe
+W:\CSC\TheLifeTimeTalents(v3)\TheLifeTimeTalents\bin\Debug\netcoreapp3.1\TheLifeTimeTalents.deps.json
+W:\CSC\TheLifeTimeTalents(v3)\TheLifeTimeTalents\bin\Debug\netcoreapp3.1\TheLifeTimeTalents.runtimeconfig.json
+W:\CSC\TheLifeTimeTalents(v3)\TheLifeTimeTalents\bin\Debug\netcoreapp3.1\TheLifeTimeTalents.runtimeconfig.dev.json
+W:\CSC\TheLifeTimeTalents(v3)\TheLifeTimeTalents\bin\Debug\netcoreapp3.1\TheLifeTimeTalents.dll
+W:\CSC\TheLifeTimeTalents(v3)\TheLifeTimeTalents\bin\Debug\netcoreapp3.1\TheLifeTimeTalents.pdb
+W:\CSC\TheLifeTimeTalents(v3)\TheLifeTimeTalents\bin\Debug\netcoreapp3.1\TheLifeTimeTalents.Views.dll
+W:\CSC\TheLifeTimeTalents(v3)\TheLifeTimeTalents\bin\Debug\netcoreapp3.1\TheLifeTimeTalents.Views.pdb
+W:\CSC\TheLifeTimeTalents(v3)\TheLifeTimeTalents\bin\Debug\netcoreapp3.1\System.Net.Http.Formatting.dll
+W:\CSC\TheLifeTimeTalents(v3)\TheLifeTimeTalents\bin\Debug\netcoreapp3.1\System.Web.Http.dll
+W:\CSC\TheLifeTimeTalents(v3)\TheLifeTimeTalents\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+W:\CSC\TheLifeTimeTalents(v3)\TheLifeTimeTalents\bin\Debug\netcoreapp3.1\Newtonsoft.Json.Bson.dll
+W:\CSC\TheLifeTimeTalents(v3)\TheLifeTimeTalents\obj\Debug\netcoreapp3.1\TheLifeTimeTalents.csprojAssemblyReference.cache
+W:\CSC\TheLifeTimeTalents(v3)\TheLifeTimeTalents\obj\Debug\netcoreapp3.1\TheLifeTimeTalents.AssemblyInfoInputs.cache
+W:\CSC\TheLifeTimeTalents(v3)\TheLifeTimeTalents\obj\Debug\netcoreapp3.1\TheLifeTimeTalents.AssemblyInfo.cs
+W:\CSC\TheLifeTimeTalents(v3)\TheLifeTimeTalents\obj\Debug\netcoreapp3.1\TheLifeTimeTalents.RazorAssemblyInfo.cache
+W:\CSC\TheLifeTimeTalents(v3)\TheLifeTimeTalents\obj\Debug\netcoreapp3.1\TheLifeTimeTalents.RazorAssemblyInfo.cs
+W:\CSC\TheLifeTimeTalents(v3)\TheLifeTimeTalents\obj\Debug\netcoreapp3.1\TheLifeTimeTalents.TagHelpers.input.cache
+W:\CSC\TheLifeTimeTalents(v3)\TheLifeTimeTalents\obj\Debug\netcoreapp3.1\TheLifeTimeTalents.TagHelpers.output.cache
+W:\CSC\TheLifeTimeTalents(v3)\TheLifeTimeTalents\obj\Debug\netcoreapp3.1\TheLifeTimeTalents.RazorCoreGenerate.cache
+W:\CSC\TheLifeTimeTalents(v3)\TheLifeTimeTalents\obj\Debug\netcoreapp3.1\Razor\Views\Home\Index.cshtml.g.cs
+W:\CSC\TheLifeTimeTalents(v3)\TheLifeTimeTalents\obj\Debug\netcoreapp3.1\Razor\Views\Home\Privacy.cshtml.g.cs
+W:\CSC\TheLifeTimeTalents(v3)\TheLifeTimeTalents\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Error.cshtml.g.cs
+W:\CSC\TheLifeTimeTalents(v3)\TheLifeTimeTalents\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_Layout.cshtml.g.cs
+W:\CSC\TheLifeTimeTalents(v3)\TheLifeTimeTalents\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
+W:\CSC\TheLifeTimeTalents(v3)\TheLifeTimeTalents\obj\Debug\netcoreapp3.1\Razor\Views\_ViewImports.cshtml.g.cs
+W:\CSC\TheLifeTimeTalents(v3)\TheLifeTimeTalents\obj\Debug\netcoreapp3.1\Razor\Views\_ViewStart.cshtml.g.cs
+W:\CSC\TheLifeTimeTalents(v3)\TheLifeTimeTalents\obj\Debug\netcoreapp3.1\TheLifeTimeTalents.RazorTargetAssemblyInfo.cache
+W:\CSC\TheLifeTimeTalents(v3)\TheLifeTimeTalents\obj\Debug\netcoreapp3.1\TheLifeTimeTalents.RazorTargetAssemblyInfo.cs
+W:\CSC\TheLifeTimeTalents(v3)\TheLifeTimeTalents\obj\Debug\netcoreapp3.1\TheLifeTimeTalents.Views.pdb
+W:\CSC\TheLifeTimeTalents(v3)\TheLifeTimeTalents\obj\Debug\netcoreapp3.1\TheLifeTimeTalents.csproj.CopyComplete
+W:\CSC\TheLifeTimeTalents(v3)\TheLifeTimeTalents\obj\Debug\netcoreapp3.1\staticwebassets\TheLifeTimeTalents.StaticWebAssets.Manifest.cache
+W:\CSC\TheLifeTimeTalents(v3)\TheLifeTimeTalents\obj\Debug\netcoreapp3.1\staticwebassets\TheLifeTimeTalents.StaticWebAssets.xml
+W:\CSC\TheLifeTimeTalents(v3)\TheLifeTimeTalents\obj\Debug\netcoreapp3.1\TheLifeTimeTalents.dll
+W:\CSC\TheLifeTimeTalents(v3)\TheLifeTimeTalents\obj\Debug\netcoreapp3.1\TheLifeTimeTalents.pdb
+W:\CSC\TheLifeTimeTalents(v3)\TheLifeTimeTalents\obj\Debug\netcoreapp3.1\TheLifeTimeTalents.genruntimeconfig.cache
+W:\CSC\TheLifeTimeTalents(v3)\TheLifeTimeTalents\bin\Debug\netcoreapp3.1\Microsoft.Bcl.AsyncInterfaces.dll
+W:\CSC\TheLifeTimeTalents(v3)\TheLifeTimeTalents\bin\Debug\netcoreapp3.1\Microsoft.Bcl.HashCode.dll
+W:\CSC\TheLifeTimeTalents(v3)\TheLifeTimeTalents\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.dll
+W:\CSC\TheLifeTimeTalents(v3)\TheLifeTimeTalents\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Abstractions.dll
+W:\CSC\TheLifeTimeTalents(v3)\TheLifeTimeTalents\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Caching.Abstractions.dll
+W:\CSC\TheLifeTimeTalents(v3)\TheLifeTimeTalents\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Caching.Memory.dll
+W:\CSC\TheLifeTimeTalents(v3)\TheLifeTimeTalents\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.dll
+W:\CSC\TheLifeTimeTalents(v3)\TheLifeTimeTalents\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.Abstractions.dll
+W:\CSC\TheLifeTimeTalents(v3)\TheLifeTimeTalents\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.Binder.dll
+W:\CSC\TheLifeTimeTalents(v3)\TheLifeTimeTalents\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.dll
+W:\CSC\TheLifeTimeTalents(v3)\TheLifeTimeTalents\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+W:\CSC\TheLifeTimeTalents(v3)\TheLifeTimeTalents\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.dll
+W:\CSC\TheLifeTimeTalents(v3)\TheLifeTimeTalents\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.Abstractions.dll
+W:\CSC\TheLifeTimeTalents(v3)\TheLifeTimeTalents\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Options.dll
+W:\CSC\TheLifeTimeTalents(v3)\TheLifeTimeTalents\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Primitives.dll
+W:\CSC\TheLifeTimeTalents(v3)\TheLifeTimeTalents\bin\Debug\netcoreapp3.1\System.Collections.Immutable.dll
+W:\CSC\TheLifeTimeTalents(v3)\TheLifeTimeTalents\bin\Debug\netcoreapp3.1\System.Diagnostics.DiagnosticSource.dll
+W:\CSC\TheLifeTimeTalents(v3)\TheLifeTimeTalents\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Relational.dll
+W:\CSC\TheLifeTimeTalents(v3)\TheLifeTimeTalents\bin\Debug\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+W:\CSC\TheLifeTimeTalents(v3)\TheLifeTimeTalents\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.SqlServer.dll
+W:\CSC\TheLifeTimeTalents(v3)\TheLifeTimeTalents\bin\Debug\netcoreapp3.1\Microsoft.Identity.Client.dll
+W:\CSC\TheLifeTimeTalents(v3)\TheLifeTimeTalents\bin\Debug\netcoreapp3.1\System.Configuration.ConfigurationManager.dll
+W:\CSC\TheLifeTimeTalents(v3)\TheLifeTimeTalents\bin\Debug\netcoreapp3.1\System.Runtime.Caching.dll
+W:\CSC\TheLifeTimeTalents(v3)\TheLifeTimeTalents\bin\Debug\netcoreapp3.1\System.Security.Cryptography.ProtectedData.dll
+W:\CSC\TheLifeTimeTalents(v3)\TheLifeTimeTalents\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.1\Microsoft.Data.SqlClient.dll
+W:\CSC\TheLifeTimeTalents(v3)\TheLifeTimeTalents\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.1\Microsoft.Data.SqlClient.dll
+W:\CSC\TheLifeTimeTalents(v3)\TheLifeTimeTalents\bin\Debug\netcoreapp3.1\runtimes\win-arm64\native\sni.dll
+W:\CSC\TheLifeTimeTalents(v3)\TheLifeTimeTalents\bin\Debug\netcoreapp3.1\runtimes\win-x64\native\sni.dll
+W:\CSC\TheLifeTimeTalents(v3)\TheLifeTimeTalents\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\sni.dll
+W:\CSC\TheLifeTimeTalents(v3)\TheLifeTimeTalents\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.0\System.Runtime.Caching.dll
+W:\CSC\TheLifeTimeTalents(v3)\TheLifeTimeTalents\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.0\System.Runtime.Caching.dll
+W:\CSC\TheLifeTimeTalents(v3)\TheLifeTimeTalents\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+W:\CSC\TheLifeTimeTalents(v3)\TheLifeTimeTalents\obj\Debug\netcoreapp3.1\Razor\Views\Home\Login.cshtml.g.cs
+W:\CSC\TheLifeTimeTalents(v3)\TheLifeTimeTalents\obj\Debug\netcoreapp3.1\TheLifeTimeTalents.csproj.CoreCompileInputs.cache
+W:\CSC\TheLifeTimeTalents(v3)\TheLifeTimeTalents\obj\Debug\netcoreapp3.1\TheLifeTimeTalents.MvcApplicationPartsAssemblyInfo.cache
+W:\CSC\TheLifeTimeTalents(v3)\TheLifeTimeTalents\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_LoginPartial.cshtml.g.cs
+F:\CSC\TheLifeTimeTalents(v3)\TheLifeTimeTalents\bin\Debug\netcoreapp3.1\appsettings.Development.json
+F:\CSC\TheLifeTimeTalents(v3)\TheLifeTimeTalents\bin\Debug\netcoreapp3.1\appsettings.json
+F:\CSC\TheLifeTimeTalents(v3)\TheLifeTimeTalents\bin\Debug\netcoreapp3.1\Properties\launchSettings.json
+F:\CSC\TheLifeTimeTalents(v3)\TheLifeTimeTalents\bin\Debug\netcoreapp3.1\TheLifeTimeTalents.exe
+F:\CSC\TheLifeTimeTalents(v3)\TheLifeTimeTalents\bin\Debug\netcoreapp3.1\TheLifeTimeTalents.deps.json
+F:\CSC\TheLifeTimeTalents(v3)\TheLifeTimeTalents\bin\Debug\netcoreapp3.1\TheLifeTimeTalents.runtimeconfig.json
+F:\CSC\TheLifeTimeTalents(v3)\TheLifeTimeTalents\bin\Debug\netcoreapp3.1\TheLifeTimeTalents.runtimeconfig.dev.json
+F:\CSC\TheLifeTimeTalents(v3)\TheLifeTimeTalents\bin\Debug\netcoreapp3.1\TheLifeTimeTalents.dll
+F:\CSC\TheLifeTimeTalents(v3)\TheLifeTimeTalents\bin\Debug\netcoreapp3.1\TheLifeTimeTalents.pdb
+F:\CSC\TheLifeTimeTalents(v3)\TheLifeTimeTalents\bin\Debug\netcoreapp3.1\TheLifeTimeTalents.Views.dll
+F:\CSC\TheLifeTimeTalents(v3)\TheLifeTimeTalents\bin\Debug\netcoreapp3.1\TheLifeTimeTalents.Views.pdb
+F:\CSC\TheLifeTimeTalents(v3)\TheLifeTimeTalents\bin\Debug\netcoreapp3.1\System.Net.Http.Formatting.dll
+F:\CSC\TheLifeTimeTalents(v3)\TheLifeTimeTalents\bin\Debug\netcoreapp3.1\System.Web.Http.dll
+F:\CSC\TheLifeTimeTalents(v3)\TheLifeTimeTalents\bin\Debug\netcoreapp3.1\Microsoft.Bcl.AsyncInterfaces.dll
+F:\CSC\TheLifeTimeTalents(v3)\TheLifeTimeTalents\bin\Debug\netcoreapp3.1\Microsoft.Bcl.HashCode.dll
+F:\CSC\TheLifeTimeTalents(v3)\TheLifeTimeTalents\bin\Debug\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+F:\CSC\TheLifeTimeTalents(v3)\TheLifeTimeTalents\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.dll
+F:\CSC\TheLifeTimeTalents(v3)\TheLifeTimeTalents\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Abstractions.dll
+F:\CSC\TheLifeTimeTalents(v3)\TheLifeTimeTalents\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Relational.dll
+F:\CSC\TheLifeTimeTalents(v3)\TheLifeTimeTalents\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.SqlServer.dll
+F:\CSC\TheLifeTimeTalents(v3)\TheLifeTimeTalents\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Caching.Abstractions.dll
+F:\CSC\TheLifeTimeTalents(v3)\TheLifeTimeTalents\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Caching.Memory.dll
+F:\CSC\TheLifeTimeTalents(v3)\TheLifeTimeTalents\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.dll
+F:\CSC\TheLifeTimeTalents(v3)\TheLifeTimeTalents\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.Abstractions.dll
+F:\CSC\TheLifeTimeTalents(v3)\TheLifeTimeTalents\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.Binder.dll
+F:\CSC\TheLifeTimeTalents(v3)\TheLifeTimeTalents\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.dll
+F:\CSC\TheLifeTimeTalents(v3)\TheLifeTimeTalents\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+F:\CSC\TheLifeTimeTalents(v3)\TheLifeTimeTalents\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.dll
+F:\CSC\TheLifeTimeTalents(v3)\TheLifeTimeTalents\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.Abstractions.dll
+F:\CSC\TheLifeTimeTalents(v3)\TheLifeTimeTalents\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Options.dll
+F:\CSC\TheLifeTimeTalents(v3)\TheLifeTimeTalents\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Primitives.dll
+F:\CSC\TheLifeTimeTalents(v3)\TheLifeTimeTalents\bin\Debug\netcoreapp3.1\Microsoft.Identity.Client.dll
+F:\CSC\TheLifeTimeTalents(v3)\TheLifeTimeTalents\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+F:\CSC\TheLifeTimeTalents(v3)\TheLifeTimeTalents\bin\Debug\netcoreapp3.1\Newtonsoft.Json.Bson.dll
+F:\CSC\TheLifeTimeTalents(v3)\TheLifeTimeTalents\bin\Debug\netcoreapp3.1\System.Collections.Immutable.dll
+F:\CSC\TheLifeTimeTalents(v3)\TheLifeTimeTalents\bin\Debug\netcoreapp3.1\System.Configuration.ConfigurationManager.dll
+F:\CSC\TheLifeTimeTalents(v3)\TheLifeTimeTalents\bin\Debug\netcoreapp3.1\System.Diagnostics.DiagnosticSource.dll
+F:\CSC\TheLifeTimeTalents(v3)\TheLifeTimeTalents\bin\Debug\netcoreapp3.1\System.Runtime.Caching.dll
+F:\CSC\TheLifeTimeTalents(v3)\TheLifeTimeTalents\bin\Debug\netcoreapp3.1\System.Security.Cryptography.ProtectedData.dll
+F:\CSC\TheLifeTimeTalents(v3)\TheLifeTimeTalents\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.1\Microsoft.Data.SqlClient.dll
+F:\CSC\TheLifeTimeTalents(v3)\TheLifeTimeTalents\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.1\Microsoft.Data.SqlClient.dll
+F:\CSC\TheLifeTimeTalents(v3)\TheLifeTimeTalents\bin\Debug\netcoreapp3.1\runtimes\win-arm64\native\sni.dll
+F:\CSC\TheLifeTimeTalents(v3)\TheLifeTimeTalents\bin\Debug\netcoreapp3.1\runtimes\win-x64\native\sni.dll
+F:\CSC\TheLifeTimeTalents(v3)\TheLifeTimeTalents\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\sni.dll
+F:\CSC\TheLifeTimeTalents(v3)\TheLifeTimeTalents\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.0\System.Runtime.Caching.dll
+F:\CSC\TheLifeTimeTalents(v3)\TheLifeTimeTalents\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.0\System.Runtime.Caching.dll
+F:\CSC\TheLifeTimeTalents(v3)\TheLifeTimeTalents\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+F:\CSC\TheLifeTimeTalents(v3)\TheLifeTimeTalents\obj\Debug\netcoreapp3.1\TheLifeTimeTalents.csprojAssemblyReference.cache
+F:\CSC\TheLifeTimeTalents(v3)\TheLifeTimeTalents\obj\Debug\netcoreapp3.1\TheLifeTimeTalents.AssemblyInfoInputs.cache
+F:\CSC\TheLifeTimeTalents(v3)\TheLifeTimeTalents\obj\Debug\netcoreapp3.1\TheLifeTimeTalents.AssemblyInfo.cs
+F:\CSC\TheLifeTimeTalents(v3)\TheLifeTimeTalents\obj\Debug\netcoreapp3.1\TheLifeTimeTalents.RazorAssemblyInfo.cache
+F:\CSC\TheLifeTimeTalents(v3)\TheLifeTimeTalents\obj\Debug\netcoreapp3.1\TheLifeTimeTalents.RazorAssemblyInfo.cs
+F:\CSC\TheLifeTimeTalents(v3)\TheLifeTimeTalents\obj\Debug\netcoreapp3.1\TheLifeTimeTalents.TagHelpers.input.cache
+F:\CSC\TheLifeTimeTalents(v3)\TheLifeTimeTalents\obj\Debug\netcoreapp3.1\TheLifeTimeTalents.TagHelpers.output.cache
+F:\CSC\TheLifeTimeTalents(v3)\TheLifeTimeTalents\obj\Debug\netcoreapp3.1\TheLifeTimeTalents.RazorCoreGenerate.cache
+F:\CSC\TheLifeTimeTalents(v3)\TheLifeTimeTalents\obj\Debug\netcoreapp3.1\Razor\Views\Home\Index.cshtml.g.cs
+F:\CSC\TheLifeTimeTalents(v3)\TheLifeTimeTalents\obj\Debug\netcoreapp3.1\Razor\Views\Home\Login.cshtml.g.cs
+F:\CSC\TheLifeTimeTalents(v3)\TheLifeTimeTalents\obj\Debug\netcoreapp3.1\Razor\Views\Home\Register.cshtml.g.cs
+F:\CSC\TheLifeTimeTalents(v3)\TheLifeTimeTalents\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Error.cshtml.g.cs
+F:\CSC\TheLifeTimeTalents(v3)\TheLifeTimeTalents\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_Layout.cshtml.g.cs
+F:\CSC\TheLifeTimeTalents(v3)\TheLifeTimeTalents\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_LoginPartial.cshtml.g.cs
+F:\CSC\TheLifeTimeTalents(v3)\TheLifeTimeTalents\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
+F:\CSC\TheLifeTimeTalents(v3)\TheLifeTimeTalents\obj\Debug\netcoreapp3.1\Razor\Views\_ViewImports.cshtml.g.cs
+F:\CSC\TheLifeTimeTalents(v3)\TheLifeTimeTalents\obj\Debug\netcoreapp3.1\Razor\Views\_ViewStart.cshtml.g.cs
+F:\CSC\TheLifeTimeTalents(v3)\TheLifeTimeTalents\obj\Debug\netcoreapp3.1\TheLifeTimeTalents.RazorTargetAssemblyInfo.cache
+F:\CSC\TheLifeTimeTalents(v3)\TheLifeTimeTalents\obj\Debug\netcoreapp3.1\TheLifeTimeTalents.RazorTargetAssemblyInfo.cs
+F:\CSC\TheLifeTimeTalents(v3)\TheLifeTimeTalents\obj\Debug\netcoreapp3.1\TheLifeTimeTalents.Views.pdb
+F:\CSC\TheLifeTimeTalents(v3)\TheLifeTimeTalents\obj\Debug\netcoreapp3.1\TheLifeTimeTalents.csproj.CopyComplete
+F:\CSC\TheLifeTimeTalents(v3)\TheLifeTimeTalents\obj\Debug\netcoreapp3.1\staticwebassets\TheLifeTimeTalents.StaticWebAssets.Manifest.cache
+F:\CSC\TheLifeTimeTalents(v3)\TheLifeTimeTalents\obj\Debug\netcoreapp3.1\staticwebassets\TheLifeTimeTalents.StaticWebAssets.xml
+F:\CSC\TheLifeTimeTalents(v3)\TheLifeTimeTalents\obj\Debug\netcoreapp3.1\TheLifeTimeTalents.dll
+F:\CSC\TheLifeTimeTalents(v3)\TheLifeTimeTalents\obj\Debug\netcoreapp3.1\TheLifeTimeTalents.pdb
+F:\CSC\TheLifeTimeTalents(v3)\TheLifeTimeTalents\obj\Debug\netcoreapp3.1\TheLifeTimeTalents.genruntimeconfig.cache
+F:\CSC\TheLifeTimeTalents(v3)\TheLifeTimeTalents\bin\Debug\netcoreapp3.1\Stripe.net.dll
+F:\CSC\TheLifeTimeTalents(v3)\TheLifeTimeTalents\obj\Debug\netcoreapp3.1\TheLifeTimeTalents.csproj.CoreCompileInputs.cache
+F:\CSC\TheLifeTimeTalents(v3)\TheLifeTimeTalents\obj\Debug\netcoreapp3.1\TheLifeTimeTalents.MvcApplicationPartsAssemblyInfo.cache
+F:\CSC\TheLifeTimeTalents(v3)\TheLifeTimeTalents\obj\Debug\netcoreapp3.1\Razor\Views\Home\ViewAccount.cshtml.g.cs

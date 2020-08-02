@@ -1,0 +1,37 @@
+﻿<form asp-antiforgery="true" asp-controller="Home" asp-action="Login">
+
+    <div class="container" id="loginC">
+        <label><b>Sign In</b></label>
+        <input type="text" placeholder="uname" name="uname" required>
+
+        <input type="password" placeholder="Password" name="psw" required>
+
+        <button type="submit">Sign In</button>
+    </div>
+    @* ViewBag allows ease of access if the backend need to return something to front end.
+        In this case, need to return error mssg. Front end people pls take a look.*@
+    @if (ViewBag.Message != "")
+    {
+        <div class="form-group row">
+            <div class="col-md-6 offset-2">
+                <div class="alert-info" id="messageBox">@ViewBag.Message</div>
+            </div>
+        </div>
+    }
+</form>
+@section Scripts  {
+    <script>
+     $('#dataForm').validate({ // initialize the plugin and validate form [Not in used yet 7/6/2020 -Husni]
+        rules: {
+            usernameInput: {
+                required: true,
+                email: true
+            },
+            passwordInput: {
+                required: true
+            }
+        }
+    });
+    </script>
+
+}

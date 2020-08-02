@@ -1,0 +1,24 @@
+﻿@{
+    ViewData["Title"] = "Register";
+}
+<h1>@ViewData["Title"]</h1>
+<form asp-antiforgery="true" asp-controller="Home" asp-action="RegisterUp">
+    <div class="container">
+        <label><b>Sign Up For A Free Account!</b></label>
+        <input type="text" placeholder="Username" name="uname" required />
+
+        <input type="text" placeholder="Email" name="email" required />
+
+        <input type="password" placeholder="Password" name="psw" required />
+
+        <button type="submit">Register</button>
+    </div>
+    @if (ViewBag.Message != "")
+    {
+        <div class="form-group row">
+            <div class="col-md-6 offset-2">
+                <div class="alert-info" id="messageBox">@ViewBag.Message</div>
+            </div>
+        </div>
+    }
+</form>
