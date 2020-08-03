@@ -172,47 +172,190 @@
     </div>
 </div>
 
-<!--disqus talents-->
-<div id="disqusModal" class="modal fade" role="dialog">
-    <div class="modal-dialog">
-
-        <div class="modal-content">
-            <div class="modal-header">
-                <h4 class="modal-title">Comment</h4>
-                <button type="button" class="close" data-dismiss="modal">&times;</button>
-            </div>
-            <div class="modal-body text-center">
-                <div id="disqus_thread"></div>
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
-            </div>
-        </div>
-
-    </div>
-</div>
-
 @*<div class="container" id="results"></div>*@
 
-<div id="searcharea">
-    <label for="search">live search</label>
-    <p>Enter the name or info about a speaker</p>
-    <input type="search" name="search" id="search" placeholder="name or info" />
-    <button type="button" class="btn btn-success" data-toggle="modal" data-target="#addModal"><span class="glyphicon glyphicon-plus"></span> Add</button>
-    @*<input type="file" name="file" id="file" value="dataFile" required="">*@
-    @*<button onclick="uploadFile()">Upload to S3</button>*@
-    <div class="upload-photo">
-        <input type="file" name="file" id="file" value="dataFile" onchange="uploadImage()">
-        <div class="photo-container">
-            <img class="photo" src="" alt="Image preview">
+@*<div id="searcharea">
+        <label for="search">live search</label>
+        <p>Enter the name or info about a speaker</p>
+        <input type="search" name="search" id="search" placeholder="name or info" />
+        <button type="button" class="btn btn-success" data-toggle="modal" data-target="#addModal"><span class="glyphicon glyphicon-plus"></span> Add</button>
+        <input type="file" name="file" id="file" value="dataFile" required="">
+        <button onclick="uploadFile()">Upload to S3</button>
+        <div class="upload-photo">
+            <input type="file" name="file" id="file" value="dataFile" onchange="uploadImage()">
+            <div class="photo-container">
+                <img class="photo" src="" alt="Image preview">
+            </div>
+        </div>
+        <div class="analysis" id="analysis">
+        </div>
+    </div>*@
+
+<form class="form-horizontal1" enctype="multipart/form-data">
+    <!-- Text input-->
+    <div class="form-group">
+        <label class="col-md-4 control-label" for="displayName">Name</label>
+        <div class="col-md-4">
+            <input style="width: 350%" maxlength="1000" id="displayName" name="displayName" type="text" placeholder="Barot Bellingham" class="form-control input-md" required="">
+
         </div>
     </div>
-    <div class="analysis" id="analysis">
+
+    <!-- Text input-->
+    <div class="form-group">
+        <label class="col-md-4 control-label" for="displayShortName">Short Name</label>
+        <div class="col-md-4">
+            <input style="width: 350%" maxlength="1000" id="displayShortName" name="displayShortName" type="text" placeholder="Barot_Bellingham" class="form-control input-md" required="">
+
+        </div>
     </div>
-</div>
+
+    <!-- Text input-->
+    <div class="form-group">
+        <label class="col-md-4 control-label" for="displayReknown">Reknown</label>
+        <div class="col-md-4">
+            <input style="width: 350%" maxlength="1000" id="displayReknown" name="displayReknown" type="text" placeholder="Best F1 Driver" class="form-control input-md" required="">
+
+        </div>
+    </div>
+
+    <!-- Text input-->
+    <div class="form-group">
+        <label class="col-md-4 control-label" for="displayImage">Link to Image</label>
+        <div class="col-md-4">
+            <input style="width: 350%" maxlength="1000" id="displayImage" name="displayImage" type="text" placeholder="http://placehold.it/160x160" class="form-control input-md" required="">
+            @*<input type="file" name="file" id="file" value="dataFile" required="">
+                <button onclick="uploadFile()">Upload to S3</button>*@
+        </div>
+    </div>
+
+    <!-- Textarea -->
+    <div class="form-group">
+        <label class="col-md-4 control-label" for="displayBio">Bio</label>
+        <div class="col-md-4">
+            <textarea style="width: 350%" maxlength="10000" rows="12" placeholder="Description" class="form-control" id="displayBio" name="displayBio"></textarea>
+        </div>
+    </div>
+
+    <button class="btn btn-warning pull-right" id="editModal1" name="editModal1' + val.id + '" data-toggle="modal" data-target="#editModal" value="' + val.id + '"><i class="fas fa-edit"></i></button>
+    <button id="btnDelete1" name="btnDelete1' + val.id + '" class="btn btn-danger pull-right" data-toggle="modal" data-target="#deleteModal" value="' + val.id + '"><i class="fas fa-trash"></i></button>
+</form>
 <div id="update"></div>
 
 @section Scripts{
+    <script>
+ var s = "@identity.FindFirst("ID")";
+        var userId = s.replace(/^\D+/g, '');
+
+        loadEdit(userId);
+
+    function loadEdit(inId) {
+        $.ajax({
+            method: 'GET',
+            url: `/API/talents/${inId}`,
+            dataType: 'json',
+        }).done(function (data) {
+            console.log(data);
+           $('#displayName').val(data.name);
+          $('#displayShortName').val(data.shortName);
+           $('#displayReknown').val(data.reknown);
+           $('#displayImage').val(data.image);
+          $('#displayBio').val(data.bio);
+
+        })
+    }
+
+
+
+    $(function () {
+        $('#update').on('click', '#btnDelete1', function () {
+            id = $(this).val();
+
+        });
+    })
+
+    //to update
+    $('#btnSave').click(function () {
+        alert("updating...");
+
+        if ($("#displayName").val().trim().length == 0 || $("#displayShortName").val().trim().length == 0 || $("#displayReknown").val().trim().length == 0 || $("#displayImage").val().trim().length == 0 || $("#displayBio").val().trim().length == 0) {
+            alert('Please Fill In The Information!');
+        }
+
+        else {
+
+
+
+            let collectedName = $('#displayName').val();
+            let collectedShortName = $('#displayShortName').val();
+            let collectedReknown = $('#displayReknown').val();
+            let collectedImageURL = $('#displayImage').val();
+            let collectedBio = $('#displayBio').val();
+            console.dir(collectedName, collectedShortName, collectedReknown, collectedImageURL, collectedBio);
+            let webFormData = new WebFormData(collectedName, collectedShortName, collectedReknown, collectedImageURL, collectedBio);
+            console.dir(webFormData);
+
+
+
+            $.ajax({
+                method: 'PUT',
+                async: true,
+                url: `/api/talents/${id}`,
+                data: webFormData,
+                datatype: 'application/json',
+                contentType: 'application/x-www-form-urlencoded',
+
+            }).done(function (data, textStatus, jqXHR) {
+                new Noty({
+                    text: data.message,
+                    theme: 'metroui',
+                    layout: 'center',
+                    type: 'success'
+                }).show();
+                setTimeout(function () {
+                    location.reload();
+                }, 2000);
+            }).fail(function (data, textStatus, jqXHR) {
+                new Noty({
+                    text: data.responseJSON.message,
+                    theme: 'metroui',
+                    layout: 'center',
+                    timeout: 3000,
+                    type: 'error'
+                }).show();
+            })
+
+        }
+    });
+
+    $('#btnDelete1').click(function () {
+        $.ajax({
+            method: 'DELETE',
+            url: `/API/talents/${id}`
+        }).done(function (data, textStatus, jqXHR) {
+            new Noty({
+                text: data.message,
+                theme: 'metroui',
+                layout: 'center',
+                type: 'success'
+            }).show();
+            setTimeout(function () {
+                location.reload();
+            }, 2000);
+        }).fail(function (data, textStatus, jqXHR) {
+            new Noty({
+                text: data.responseJSON.message,
+                theme: 'metroui',
+                layout: 'center',
+                timeout: 3000,
+                type: 'error'
+            }).show();
+        })
+
+    });
+
+
+    </script>
     <style>
 
         body {
@@ -367,6 +510,7 @@
             apiKey: clarifaiApiKey
         });
 
+
         // Handles image upload
         function uploadImage() {
             var preview = document.querySelector('img');
@@ -465,7 +609,7 @@
 
     <script>
         AWS.config.update({
-            accessKeyId: 'ASIAVF7QI2DUN5YBUMPM',
+            accessKeyId: 'ASIAVF7QI2DUMONYNRXO',
             secretAccessKey: 'TH2ww5RmsxPIO3RFMqYki51BlTPJ1PiTMXdNnmQW',
             sessionToken: 'FwoGZXIvYXdzEH4aDB8jAWObwphLqjUnFSLWAXjaNIF04fpEZrMESbd38GX/sJEwC9KfHaR7plnArilF5EAsPOEvBURY32vDVD+RAVT56L2o/agKDGRT/ZQdN6nYS0diWUtW8OUcOjkBDwSi+MnTaR1u6Rhp/OCBK0Eo7KQk0hDSZfZ4OxHrqBMf5TnCoxO/f7DBbYd0XlHJws22Dk2CAZ7gYtJ29UMJE0ZH18slYgxtuybMY9cv5aqUnvDx07RIVsg8swt3VYsGaA/PlAZUj7l3hH70Sk2FxJ0Oazaxku2NHYmANnzqQngO780oPhXnficovcLU+AUyLdKrtoWtCIF70uc2aZa+/5zK9gqPDeTbbhmUYnVsL1osmwjBSaLeGfZIe4ENzg=='
         });
@@ -499,70 +643,7 @@
     </script>
 
     <script>
-        $('#search').keyup(function () {
-            //get data from json file
-            //var urlForJson = "data.json";
-
-            //get data from Restful web Service in development environment
-            var urlForJson = "/api/talents";
-
-            //get data from Restful web Service in production environment
-            //var urlForJson= "http://csc123.azurewebsites.net/api/talents";
-            //var bio;
-            //var name;
-            //var output = '<ul class="searchresults">';
-            //Url for the Cloud image hosting
-            //var urlForCloudImage = "http://res.cloudinary.com/doh5kivfn/image/upload/v1460006156/talents/";
-            //var urlForCloudImage = "https://sp-p1851830-s3-bucket-csc.s3.amazonaws.com/"
-            //var urlForCloudImage = "https://csc-talentsearch.s3.amazonaws.com/"
-            var urlForCloudImage = "https://csctalents2.s3.amazonaws.com/"
-            //var urlForCloudImage = "https://testingforcsc.s3.amazonaws.com/"
-
-            var searchField = $('#search').val();
-            var myExp = new RegExp(searchField, "i");
-            $.getJSON(urlForJson, function (data) {
-                var output = '<ul class="searchresults">';
-                $.each(data, function (key, val) {
-                    //for debug
-                    console.log(data);
-                    if ((val.name.search(myExp) != -1) ||
-                        (val.bio.search(myExp) != -1)) {
-                        output += '<li>';
-                        output += '<h2>' + val.name + '</h2>';
-                        //output += '<img src="images/' + val.ShortName + '_tn.jpg" alt="' + val.Name + '" />';
-                        //output += '<img src=' + urlForCloudImage + val.ShortName + "_tn.jpg alt=" + val.Name + '" />';
-                        //output += '<p>' + val.Bio + '</p>';
-                        @{ 
-                            string roleName = "";
-                            if (identity.IsAuthenticated)
-                            {
-                                roleName = identity.FindFirst("RoleName").ToString().Contains("Registered Paid Plan User").ToString();
-                            }
-                        }
-                        if ("@roleName" == "True" ) {
-                            //output += '<button class="btn btn-warning pull-right" data-toggle="modal" data-target="#editModal" data-talentid="' + val.id + '"><i class="fas fa-edit"></i></button>';
-                            //output += '<button id="btnDelete" class="btn btn-danger pull-right" data-toggle="modal" data-target="#deleteModal" data-talentid="' + val.id + '"><i class="fas fa-trash"></i></button>';
-                            output += '<button class="btn btn-warning pull-right" id="editModal" name="editModal' + val.id + '" data-toggle="modal" data-target="#editModal" value="' + val.id + '"><i class="fas fa-edit"></i></button>';
-                            output += '<button id="btnDelete" name="btnDelete' + val.id + '" class="btn btn-danger pull-right" data-toggle="modal" data-target="#deleteModal" value="' + val.id + '"><i class="fas fa-trash"></i></button>';
-                            output +=   `<button id="btnComment" class="btn btn-success pull-right" data-toggle="modal" data-target="#disqusModal" value=${val.id}><i class="fas fa-comments "></i></button>`
-                        }
-
-                        //get the image from cloud hosting
-
-                        output += `<img src="${val.image}" alt"${val.name}" />`
-                        //'<img src=' + val.image + '"alt="' + val.name + ' " />';
-                        //  <img src="${val.image}" alt"${val.name}" />
-                        output += '<p>' + val.bio + '</p>';
-                        output += '</li>';
-
-                        /*Long URL must start with a protocol, bitly can't (and won't) figure out the right protocol.*/
-                        ShortLinkBitly(val.image);
-                    }
-                });
-                output += '</ul>';
-                $('#update').html(output);
-            }); //get JSON
-        });
+      
 
         //var shortURL = ShortLinkBitly("https://sp-p1851830-s3-bucket-csc.s3.amazonaws.com/Barot_Bellingham_tn.jpg");
         /*********************************************
@@ -626,11 +707,13 @@
         /* END: Short Link using Bitly */
 
 
+
         var talentId;
 
         $('#addModal').on('shown.bs.modal', function (e) {
             if (sessionStorage.getItem('tokenKey') == null || sessionStorage.getItem('username') == null) {
                 alertDone('Login to access this feature');
+
                 $.ajax({
                     type: 'POST',
                     async: true,
@@ -667,6 +750,7 @@
                 //    CreatedBy: sessionStorage.getItem('username'),
                 //    UpdatedBy: sessionStorage.getItem('username')
                 //};
+
                 function WebFormData(inName, inShortName, inReknown, inImageURL, inBio) {
                     this.name = inName;
                     this.shortName = inShortName;
@@ -721,19 +805,35 @@
 
                 })
 
+
+                //$.ajax({
+                //    url: '/api/talents/Add',
+                //    headers: { 'Authorization': 'Bearer ' + sessionStorage.getItem('tokenKey') },
+                //    cache: false,
+                //    async: true,
+                //    type: 'POST',
+                //    data: webFormData,
+                //    datatype: 'application/json',
+                //    contentType: 'application/json; charset=utf-8',
+                //  //  data: JSON.stringify(talent),
+
+
+                //    statusCode: {
+                //        201: function () {
+                //            hideModal();
+                //        }
+                //    }
+                //}).success(function (data) {
+                //    console.dir(data);
+                //    hideModal();
+                //    window.location.reload();
+
+
+
+
             }
         });
 
-        //to get Id for updating
-        $('#editModal').on('shown.bs.modal', function (e) {
-            if (sessionStorage.getItem('tokenKey') == null || sessionStorage.getItem('username') == null) {
-                alertDone('Login to access this feature');
-            }
-            else {
-                talentId = $(e.relatedTarget).data('talentid');
-                getTalent(talentId);
-            }
-        });
 
         $(function () {
             $('#update').on('click', '#editModal', function () {
@@ -757,12 +857,22 @@
 
             })
         }
+
+
+
         $(function () {
             $('#update').on('click', '#btnDelete', function () {
                 id = $(this).val();
 
             });
         })
+
+
+
+
+
+
+
         function WebFormData(inName, inShortName, inReknown, inImageURL, inBio) {
             this.name = inName;
             this.shortName = inShortName;
@@ -771,6 +881,9 @@
             this.bio = inBio
 
         } //end of webformdata
+
+
+
 
         //to update
         $('#btnSave').click(function () {
@@ -782,6 +895,21 @@
 
             else {
 
+
+
+                //   loadEdit($(this).val());
+
+
+                //var talent = {
+                //    Name: $('#editName').val(),
+                //    ShortName: $('#editShortName').val(),
+                //    Reknown: $('#editReknown').val(),
+                //    Bio: $('#editBio').val(),
+                //    ImageLink: $('#editImage').val(),
+                //    UpdatedBy: sessionStorage.getItem("username")
+                //};
+
+
                 let collectedName = $('#editName').val();
                 let collectedShortName = $('#editShortName').val();
                 let collectedReknown = $('#editReknown').val();
@@ -790,6 +918,7 @@
                 console.dir(collectedName, collectedShortName, collectedReknown, collectedImageURL, collectedBio);
                 let webFormData = new WebFormData(collectedName, collectedShortName, collectedReknown, collectedImageURL, collectedBio);
                 console.dir(webFormData);
+
 
 
                 $.ajax({
@@ -819,6 +948,21 @@
                         type: 'error'
                     }).show();
                 })
+                //$.ajax({
+                //    url: `/api/talents/${id}` ,
+                //    headers: { 'Authorization': 'Bearer ' + sessionStorage.getItem('tokenKey') },
+                //    cache: false,
+                //    type: 'PUT',
+                //    contentType: 'application/json; charset=utf-8',
+                //    data : webFormData,
+                //  //  data: JSON.stringify(talent),
+                //    success: function () {
+                //        hideModal();
+                //    }
+                //}).done(function (response) {
+                //    alert(response);
+                //});
+
             }
         });
 
@@ -829,9 +973,12 @@
             }
             else {
                 talentId = $(e.relatedTarget).data('talentid');
+
             }
         });
-
+        $('#deleteModal').click(function () {
+            //    talentId = $(this.id.relatedTarget).data('talentid');
+        })
         //to delete
         $('#btnDelete').click(function () {
             $.ajax({
@@ -856,6 +1003,18 @@
                     type: 'error'
                 }).show();
             })
+            //$.ajax({
+            //    url: '/api/talents/' + talentId,
+            //    headers: { 'Authorization': 'Bearer ' + sessionStorage.getItem('tokenKey') },
+            //    cache: false,
+            //    type: 'Delete',
+            //    contentType: 'application/json; charset=utf-8',
+            //    success: function () {
+            //        hideModal();
+            //    }
+            //}).done(function (data) {
+            //    alert(data);
+            // });
         });
 
         //to get info about 1 and display in form
@@ -870,30 +1029,10 @@
                     $('#editShortName').val(data.ShortName);
                     $('#editReknown').val(data.Reknown);
                     $('#editBio').val(data.Bio);
-                    $('#editImage').val(data.ImageLink);
+                    $('#editImage').val(data.imageURL);
                 }
             });
         }
-        $('#btnComment').on('click', function () {
-            loadDisqus(this.val());
-        });
-        function loadDisqus(id) {
-            /**
-        *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
-        *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
 
-            var disqus_config = function () {
-                this.page.url = "http://localhost:64084";  // Replace PAGE_URL with your page's canonical URL variable
-                this.page.identifier = id; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
-            };
-
-        (function () { // DON'T EDIT BELOW THIS LINE
-            var d = document, s = d.createElement('script');
-            s.src = 'https://lttalents.disqus.com/embed.js';
-            s.setAttribute('data-timestamp', +new Date());
-            (d.head || d.body).appendChild(s);
-        })();
-        }
-        
     </script>
 }

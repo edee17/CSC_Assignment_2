@@ -15,6 +15,8 @@ namespace TheLifeTimeTalents.Data
         public DbSet<User> Users { get; set; }
         public DbSet<Role> Roles { get; set; }
 
+        public DbSet<Talent> Talent { get; set; }//DbSet property used by all team members
+
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {   //Reference: http://benjii.me/2016/05/dotnet-ef-migrations-for-asp-net-core/  
             foreach (var entity in modelBuilder.Model.GetEntityTypes())
