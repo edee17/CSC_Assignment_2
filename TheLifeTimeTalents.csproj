@@ -5,6 +5,8 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="AWSSDK.DynamoDBv2" Version="3.3.106.40" />
+    <PackageReference Include="AWSSDK.Extensions.NETCore.Setup" Version="3.3.101" />
     <PackageReference Include="glyphicon" Version="1.0.1" />
     <PackageReference Include="Microsoft.AspNet.WebApi.Core" Version="5.2.7" />
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="3.1.6" />

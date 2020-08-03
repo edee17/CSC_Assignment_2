@@ -38,6 +38,14 @@
       "frameworks": {
         "netcoreapp3.1": {
           "dependencies": {
+            "AWSSDK.DynamoDBv2": {
+              "target": "Package",
+              "version": "[3.3.106.40, )"
+            },
+            "AWSSDK.Extensions.NETCore.Setup": {
+              "target": "Package",
+              "version": "[3.3.101, )"
+            },
             "Microsoft.AspNet.WebApi.Core": {
               "target": "Package",
               "version": "[5.2.7, )"

@@ -15,6 +15,7 @@ using TheLifeTimeTalents.Data;
 using TheLifeTimeTalents.Helpers;
 using TheLifeTimeTalents.Services;
 using Stripe;
+using Amazon.DynamoDBv2;
 
 namespace TheLifeTimeTalents
 {
@@ -40,6 +41,8 @@ namespace TheLifeTimeTalents
                options => options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection"))
             );
             services.Configure<StripeSettings>(Configuration.GetSection("Stripe"));
+            services.AddDefaultAWSOptions(Configuration.GetAWSOptions());
+            services.AddAWSService<IAmazonDynamoDB>();
             services.AddCors();
             //services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
 

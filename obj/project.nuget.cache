@@ -1,9 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "uoZlmz33C3/bmGGebLfhvDoKmlF/SPb8rpWruqUoWKkiFFHd3Y3NQdgtaBP5DrWwkg6BBCEbZGzfv5xbWhrBpQ==",
+  "dgSpecHash": "LJHboy0PPo5LhdEcNLvnuWWy7q4pW1KE1bg6z/9OdQq2DEo7fWACovrmeAnGZ0B3ztFbekwwCEyPtrhNUkHesQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\Muhammad Hariz\\Source\\Repos\\CSC_Assignment_2\\TheLifeTimeTalents.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\Muhammad Hariz\\.nuget\\packages\\awssdk.core\\3.3.107.32\\awssdk.core.3.3.107.32.nupkg.sha512",
+    "C:\\Users\\Muhammad Hariz\\.nuget\\packages\\awssdk.dynamodbv2\\3.3.106.40\\awssdk.dynamodbv2.3.3.106.40.nupkg.sha512",
+    "C:\\Users\\Muhammad Hariz\\.nuget\\packages\\awssdk.extensions.netcore.setup\\3.3.101\\awssdk.extensions.netcore.setup.3.3.101.nupkg.sha512",
     "C:\\Users\\Muhammad Hariz\\.nuget\\packages\\glyphicon\\1.0.1\\glyphicon.1.0.1.nupkg.sha512",
     "C:\\Users\\Muhammad Hariz\\.nuget\\packages\\microsoft.aspnet.webapi.client\\5.2.7\\microsoft.aspnet.webapi.client.5.2.7.nupkg.sha512",
     "C:\\Users\\Muhammad Hariz\\.nuget\\packages\\microsoft.aspnet.webapi.core\\5.2.7\\microsoft.aspnet.webapi.core.5.2.7.nupkg.sha512",

@@ -283,8 +283,6 @@ C:\Users\Muhammad Hariz\Source\Repos\CSC_Assignment_2\bin\Debug\netcoreapp3.1\ru
 C:\Users\Muhammad Hariz\Source\Repos\CSC_Assignment_2\obj\Debug\netcoreapp3.1\TheLifeTimeTalents.csprojAssemblyReference.cache
 C:\Users\Muhammad Hariz\Source\Repos\CSC_Assignment_2\obj\Debug\netcoreapp3.1\TheLifeTimeTalents.AssemblyInfoInputs.cache
 C:\Users\Muhammad Hariz\Source\Repos\CSC_Assignment_2\obj\Debug\netcoreapp3.1\TheLifeTimeTalents.AssemblyInfo.cs
-C:\Users\Muhammad Hariz\Source\Repos\CSC_Assignment_2\obj\Debug\netcoreapp3.1\TheLifeTimeTalents.csproj.CoreCompileInputs.cache
-C:\Users\Muhammad Hariz\Source\Repos\CSC_Assignment_2\obj\Debug\netcoreapp3.1\TheLifeTimeTalents.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\Muhammad Hariz\Source\Repos\CSC_Assignment_2\obj\Debug\netcoreapp3.1\TheLifeTimeTalents.RazorAssemblyInfo.cache
 C:\Users\Muhammad Hariz\Source\Repos\CSC_Assignment_2\obj\Debug\netcoreapp3.1\TheLifeTimeTalents.RazorAssemblyInfo.cs
 C:\Users\Muhammad Hariz\Source\Repos\CSC_Assignment_2\obj\Debug\netcoreapp3.1\TheLifeTimeTalents.TagHelpers.input.cache
@@ -309,3 +307,5 @@ C:\Users\Muhammad Hariz\Source\Repos\CSC_Assignment_2\obj\Debug\netcoreapp3.1\st
 C:\Users\Muhammad Hariz\Source\Repos\CSC_Assignment_2\obj\Debug\netcoreapp3.1\TheLifeTimeTalents.dll
 C:\Users\Muhammad Hariz\Source\Repos\CSC_Assignment_2\obj\Debug\netcoreapp3.1\TheLifeTimeTalents.pdb
 C:\Users\Muhammad Hariz\Source\Repos\CSC_Assignment_2\obj\Debug\netcoreapp3.1\TheLifeTimeTalents.genruntimeconfig.cache
+C:\Users\Muhammad Hariz\Source\Repos\CSC_Assignment_2\bin\Debug\netcoreapp3.1\AWSSDK.Core.dll
+C:\Users\Muhammad Hariz\Source\Repos\CSC_Assignment_2\bin\Debug\netcoreapp3.1\AWSSDK.DynamoDBv2.dll

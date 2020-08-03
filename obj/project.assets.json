@@ -2,6 +2,42 @@
   "version": 3,
   "targets": {
     ".NETCoreApp,Version=v3.1": {
+      "AWSSDK.Core/3.3.107.32": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/AWSSDK.Core.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/AWSSDK.Core.dll": {}
+        }
+      },
+      "AWSSDK.DynamoDBv2/3.3.106.40": {
+        "type": "package",
+        "dependencies": {
+          "AWSSDK.Core": "[3.3.107.32, 3.4.0)"
+        },
+        "compile": {
+          "lib/netstandard2.0/AWSSDK.DynamoDBv2.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/AWSSDK.DynamoDBv2.dll": {}
+        }
+      },
+      "AWSSDK.Extensions.NETCore.Setup/3.3.101": {
+        "type": "package",
+        "dependencies": {
+          "AWSSDK.Core": "[3.3.100, 3.6.0)",
+          "Microsoft.Extensions.Configuration.Abstractions": "2.0.0",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "2.0.0",
+          "Microsoft.Extensions.Logging.Abstractions": "2.0.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/AWSSDK.Extensions.NETCore.Setup.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/AWSSDK.Extensions.NETCore.Setup.dll": {}
+        }
+      },
       "glyphicon/1.0.1": {
         "type": "package"
       },
@@ -2109,6 +2145,110 @@
     }
   },
   "libraries": {
+    "AWSSDK.Core/3.3.107.32": {
+      "sha512": "KjECm9ohfB7aH/3IRgfiesQwWcPs0PFuo9s729K5fnbxtIXfJpGkXXZ5fu4vNcXbjH1Ci5C80svu5B3slodUvQ==",
+      "type": "package",
+      "path": "awssdk.core/3.3.107.32",
+      "hasTools": true,
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "awssdk.core.3.3.107.32.nupkg.sha512",
+        "awssdk.core.nuspec",
+        "lib/MonoAndroid10/AWSSDK.Core.XML",
+        "lib/MonoAndroid10/AWSSDK.Core.dll",
+        "lib/MonoAndroid10/AWSSDK.Core.pdb",
+        "lib/MonoTouch10/AWSSDK.Core.XML",
+        "lib/MonoTouch10/AWSSDK.Core.dll",
+        "lib/Xamarin.Mac20/AWSSDK.Core.XML",
+        "lib/Xamarin.Mac20/AWSSDK.Core.dll",
+        "lib/Xamarin.iOS10/AWSSDK.Core.XML",
+        "lib/Xamarin.iOS10/AWSSDK.Core.dll",
+        "lib/net35/AWSSDK.Core.dll",
+        "lib/net35/AWSSDK.Core.pdb",
+        "lib/net35/AWSSDK.Core.xml",
+        "lib/net45/AWSSDK.Core.dll",
+        "lib/net45/AWSSDK.Core.pdb",
+        "lib/net45/AWSSDK.Core.xml",
+        "lib/netstandard1.3/AWSSDK.Core.dll",
+        "lib/netstandard1.3/AWSSDK.Core.pdb",
+        "lib/netstandard1.3/AWSSDK.Core.xml",
+        "lib/netstandard2.0/AWSSDK.Core.dll",
+        "lib/netstandard2.0/AWSSDK.Core.pdb",
+        "lib/netstandard2.0/AWSSDK.Core.xml",
+        "lib/portable-net45+win8+wpa81+wp8/AWSSDK.Core.XML",
+        "lib/portable-net45+win8+wpa81+wp8/AWSSDK.Core.dll",
+        "lib/portable-net45+win8+wpa81+wp8/AWSSDK.Core.pdb",
+        "lib/uap/AWSSDK.Core.XML",
+        "lib/uap/AWSSDK.Core.dll",
+        "lib/uap/AWSSDK.Core.pdb",
+        "lib/win8/AWSSDK.Core.XML",
+        "lib/win8/AWSSDK.Core.dll",
+        "lib/win8/AWSSDK.Core.pdb",
+        "lib/wp8/AWSSDK.Core.XML",
+        "lib/wp8/AWSSDK.Core.dll",
+        "lib/wp8/AWSSDK.Core.pdb",
+        "lib/wpa81/AWSSDK.Core.XML",
+        "lib/wpa81/AWSSDK.Core.dll",
+        "lib/wpa81/AWSSDK.Core.pdb",
+        "tools/account-management.ps1"
+      ]
+    },
+    "AWSSDK.DynamoDBv2/3.3.106.40": {
+      "sha512": "28/3JtfHNac+EkN4B8JNu5eIMvyxafkpB2YgCd6qWIFU3O9M1cLv91oBf55GF38eJiJ0SyYhu1FrQGViGVZV7Q==",
+      "type": "package",
+      "path": "awssdk.dynamodbv2/3.3.106.40",
+      "hasTools": true,
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "analyzers/dotnet/cs/AWSSDK.DynamoDBv2.CodeAnalysis.dll",
+        "awssdk.dynamodbv2.3.3.106.40.nupkg.sha512",
+        "awssdk.dynamodbv2.nuspec",
+        "lib/MonoAndroid10/AWSSDK.DynamoDBv2.XML",
+        "lib/MonoAndroid10/AWSSDK.DynamoDBv2.dll",
+        "lib/MonoTouch10/AWSSDK.DynamoDBv2.XML",
+        "lib/MonoTouch10/AWSSDK.DynamoDBv2.dll",
+        "lib/MonoTouch10/AWSSDK.DynamoDBv2.pdb",
+        "lib/Xamarin.iOS10/AWSSDK.DynamoDBv2.XML",
+        "lib/Xamarin.iOS10/AWSSDK.DynamoDBv2.dll",
+        "lib/net35/AWSSDK.DynamoDBv2.dll",
+        "lib/net35/AWSSDK.DynamoDBv2.pdb",
+        "lib/net35/AWSSDK.DynamoDBv2.xml",
+        "lib/net45/AWSSDK.DynamoDBv2.dll",
+        "lib/net45/AWSSDK.DynamoDBv2.pdb",
+        "lib/net45/AWSSDK.DynamoDBv2.xml",
+        "lib/netstandard1.3/AWSSDK.DynamoDBv2.dll",
+        "lib/netstandard1.3/AWSSDK.DynamoDBv2.pdb",
+        "lib/netstandard1.3/AWSSDK.DynamoDBv2.xml",
+        "lib/netstandard2.0/AWSSDK.DynamoDBv2.dll",
+        "lib/netstandard2.0/AWSSDK.DynamoDBv2.pdb",
+        "lib/netstandard2.0/AWSSDK.DynamoDBv2.xml",
+        "lib/portable-net45+win8+wpa81+wp8/AWSSDK.DynamoDBv2.XML",
+        "lib/portable-net45+win8+wpa81+wp8/AWSSDK.DynamoDBv2.dll",
+        "lib/portable-net45+win8+wpa81+wp8/AWSSDK.DynamoDBv2.pdb",
+        "lib/uap/AWSSDK.DynamoDBv2.XML",
+        "lib/uap/AWSSDK.DynamoDBv2.dll",
+        "lib/uap/AWSSDK.DynamoDBv2.pdb",
+        "tools/install.ps1",
+        "tools/uninstall.ps1"
+      ]
+    },
+    "AWSSDK.Extensions.NETCore.Setup/3.3.101": {
+      "sha512": "mbFGOX62zG4A/0bIhKy+I3NmNBAwSCKClFl+Y6RzuRj+0cQDBbmH33JMe8x3SWizhoyl+ATm2ldOR1phIFTGvA==",
+      "type": "package",
+      "path": "awssdk.extensions.netcore.setup/3.3.101",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "awssdk.extensions.netcore.setup.3.3.101.nupkg.sha512",
+        "awssdk.extensions.netcore.setup.nuspec",
+        "lib/netstandard1.3/AWSSDK.Extensions.NETCore.Setup.dll",
+        "lib/netstandard1.3/AWSSDK.Extensions.NETCore.Setup.pdb",
+        "lib/netstandard2.0/AWSSDK.Extensions.NETCore.Setup.dll",
+        "lib/netstandard2.0/AWSSDK.Extensions.NETCore.Setup.pdb"
+      ]
+    },
     "glyphicon/1.0.1": {
       "sha512": "eysBKGjcKFb4mdk04ZlStZUuDjaaql2/XuCNhCJtQZaCmsV3+iT5ogACJUEOXrb7/hlirlcTwDpoJB8raWPaYw==",
       "type": "package",
@@ -7145,6 +7285,8 @@
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.1": [
+      "AWSSDK.DynamoDBv2 >= 3.3.106.40",
+      "AWSSDK.Extensions.NETCore.Setup >= 3.3.101",
       "Microsoft.AspNet.WebApi.Core >= 5.2.7",
       "Microsoft.EntityFrameworkCore >= 3.1.6",
       "Microsoft.EntityFrameworkCore.Relational >= 3.1.6",
@@ -7191,6 +7333,14 @@
     "frameworks": {
       "netcoreapp3.1": {
         "dependencies": {
+          "AWSSDK.DynamoDBv2": {
+            "target": "Package",
+            "version": "[3.3.106.40, )"
+          },
+          "AWSSDK.Extensions.NETCore.Setup": {
+            "target": "Package",
+            "version": "[3.3.101, )"
+          },
           "Microsoft.AspNet.WebApi.Core": {
             "target": "Package",
             "version": "[5.2.7, )"
