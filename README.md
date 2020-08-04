@@ -7,7 +7,7 @@ This Repositry Contains all the Codes, Documentation & Screenshots of Postman.
 All of the codes can be found [HERE](https://github.com/edee17/CSC_Assignment_2/tree/CSC_Assignment2_Ver1).
 
 ## Documentation
-The documentation can be found [HERE](https://github.com/edee17/CSC_Assignment_2/blob/master/CSC_Assignment_2_Documentation.pdf).
+The documentation can be found [HERE](https://github.com/edee17/CSC_Assignment_2/blob/master/CSC_Assignment_2_Documentation_V2.pdf).
 
 ## Screenshot Images
 The images of Postman testing and other Screenshots can be found [HERE](https://github.com/edee17/CSC_Assignment_2/tree/master/Screenshots).
