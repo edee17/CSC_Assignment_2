@@ -309,3 +309,8 @@ C:\Users\Muhammad Hariz\Source\Repos\CSC_Assignment_2\obj\Debug\netcoreapp3.1\Th
 C:\Users\Muhammad Hariz\Source\Repos\CSC_Assignment_2\obj\Debug\netcoreapp3.1\TheLifeTimeTalents.genruntimeconfig.cache
 C:\Users\Muhammad Hariz\Source\Repos\CSC_Assignment_2\bin\Debug\netcoreapp3.1\AWSSDK.Core.dll
 C:\Users\Muhammad Hariz\Source\Repos\CSC_Assignment_2\bin\Debug\netcoreapp3.1\AWSSDK.DynamoDBv2.dll
+C:\Users\Muhammad Hariz\Source\Repos\CSC_Assignment_2\bin\Debug\netcoreapp3.1\AWSSDK.Extensions.NETCore.Setup.dll
+C:\Users\Muhammad Hariz\Source\Repos\CSC_Assignment_2\obj\Debug\netcoreapp3.1\TheLifeTimeTalents.csproj.CoreCompileInputs.cache
+C:\Users\Muhammad Hariz\Source\Repos\CSC_Assignment_2\obj\Debug\netcoreapp3.1\TheLifeTimeTalents.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Muhammad Hariz\Source\Repos\CSC_Assignment_2\obj\Debug\netcoreapp3.1\Razor\Views\Home\Profile.cshtml.g.cs
+C:\Users\Muhammad Hariz\Source\Repos\CSC_Assignment_2\obj\Debug\netcoreapp3.1\Razor\Views\Home\Comments.cshtml.g.cs

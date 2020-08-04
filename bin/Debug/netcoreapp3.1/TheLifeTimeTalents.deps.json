@@ -25,6 +25,7 @@
       "TheLifeTimeTalents/1.0.0": {
         "dependencies": {
           "AWSSDK.DynamoDBv2": "3.3.106.40",
+          "AWSSDK.Extensions.NETCore.Setup": "3.3.101",
           "Microsoft.AspNet.WebApi.Core": "5.2.7",
           "Microsoft.EntityFrameworkCore": "3.1.6",
           "Microsoft.EntityFrameworkCore.Relational": "3.1.6",
@@ -323,6 +324,23 @@
         },
         "compile": {
           "lib/netstandard2.0/AWSSDK.DynamoDBv2.dll": {}
+        }
+      },
+      "AWSSDK.Extensions.NETCore.Setup/3.3.101": {
+        "dependencies": {
+          "AWSSDK.Core": "3.3.107.32",
+          "Microsoft.Extensions.Configuration.Abstractions": "3.1.6",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "3.1.6",
+          "Microsoft.Extensions.Logging.Abstractions": "3.1.6"
+        },
+        "runtime": {
+          "lib/netstandard2.0/AWSSDK.Extensions.NETCore.Setup.dll": {
+            "assemblyVersion": "3.3.0.0",
+            "fileVersion": "3.3.100.0"
+          }
+        },
+        "compile": {
+          "lib/netstandard2.0/AWSSDK.Extensions.NETCore.Setup.dll": {}
         }
       },
       "glyphicon/1.0.1": {},
@@ -3313,6 +3331,13 @@
       "sha512": "sha512-28/3JtfHNac+EkN4B8JNu5eIMvyxafkpB2YgCd6qWIFU3O9M1cLv91oBf55GF38eJiJ0SyYhu1FrQGViGVZV7Q==",
       "path": "awssdk.dynamodbv2/3.3.106.40",
       "hashPath": "awssdk.dynamodbv2.3.3.106.40.nupkg.sha512"
+    },
+    "AWSSDK.Extensions.NETCore.Setup/3.3.101": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-mbFGOX62zG4A/0bIhKy+I3NmNBAwSCKClFl+Y6RzuRj+0cQDBbmH33JMe8x3SWizhoyl+ATm2ldOR1phIFTGvA==",
+      "path": "awssdk.extensions.netcore.setup/3.3.101",
+      "hashPath": "awssdk.extensions.netcore.setup.3.3.101.nupkg.sha512"
     },
     "glyphicon/1.0.1": {
       "type": "package",

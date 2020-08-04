@@ -12,5 +12,7 @@ namespace TheLifeTimeTalents.Models
         public string ShortName { get; set; }
         public string Reknown { get; set; }
         public string Bio { get; set; }
+        public string ImageURL { get; set; }
+        public int CreatedBy { get; set; }
     }
 }

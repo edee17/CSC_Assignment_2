@@ -40,19 +40,19 @@ namespace TheLifeTimeTalents.Services.DynamoDBServices
             {
                 return new ScanRequest
                 {
-                    TableName = "TempDynamoDbTable",
+                    TableName = "Subscription",
                 };
             }
 
             return new ScanRequest
             {
-                TableName = "TempDynamoDbTable",
+                TableName = "Subscription",
                 ExpressionAttributeValues = new Dictionary<string, AttributeValue> {
             {
                 ":v_Id", new AttributeValue { N = id.ToString() }}
         },
-                FilterExpression = "Id = :v_Id",
-                ProjectionExpression = "Id, ReplyDateTime"
+                FilterExpression = "SubId = :v_Id",
+                ProjectionExpression = "PriceId, SubBy, SubId"
             };
         }
 
@@ -67,9 +67,9 @@ namespace TheLifeTimeTalents.Services.DynamoDBServices
         {
             return new Item
             {
-                Id = Convert.ToInt32(result["Id"].N),
-                ReplyDatetime = result["ReplyDateTime"].N,
-                Price = Double.Parse(result["Price"].N)
+                PriceId = result["PriceId"].N,
+                SubBy = int.Parse(result["SubBy"].N),
+                SubId = result["SubId"].N
             };
         }
     }

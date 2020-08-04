@@ -351,6 +351,10 @@
             margin-left: 5px;
         }
 
+        #btnComment {
+            margin-left: 5px;
+        }
+
         .photo {
             margin: auto;
             margin-top: 5px;
@@ -465,9 +469,9 @@
 
     <script>
         AWS.config.update({
-            accessKeyId: 'ASIAVF7QI2DUN5YBUMPM',
-            secretAccessKey: 'g9H9w+bJC8+7eLD+1DUi/9DRrwVweSyqnB/svYRC',
-            sessionToken: 'FwoGZXIvYXdzECAaDAP3ryIvsgc3JaTVFSLWAd1e5NXGjBXktiBzVqqTcJ1yUHGHu2hkgdQNu6CO0weuyQXw7DgwRkvOm9IoAWKFHdwHWOY/T3jWuCAknLGKmBYjyK372GJzLmx4kNrv1DpVrZQNpzJXRkx1ht8+KBGnhmZtXg9j3zygduQC4wmejKhvHWzVY0EqFNl9/VaQZ2Xmc6G+Mu7OabMYNHmP8XLi/R2F4cJ0Xo8t2J4LquMLTAWfZP3DCiHOXn7WNu+DRIymUggeerDflqKTXlRKkDAq0kCqodc1qYJvj4/33Es/PALyUkfdIQcomN+/+AUyLa2n07/RDiHolIlunI/G5qhHP/yJSJ/pelRoByMFFjQSMaRkM+ekijekZAYqDA=='
+            accessKeyId: 'ASIAVF7QI2DUF47PFZ5T',
+            secretAccessKey: '6lk4FuSgpPS8LchvoS5IQI4JnccIGwrzj2nmkeVA',
+            sessionToken: 'FwoGZXIvYXdzEOb//////////wEaDMCRN4bZ0Ihoqqj4DSLWAQuX3+sRbe+A6iloECSM8KrmZIttWZg0t8DjN5R2zN/DazIhS4ogSbVhYJ1zXHNZlLliE3t32nEpX+LmRZKzo8GCFwaJOnBbpmx0MQJI24molzd2AcJn7OVe5Ttz2IMIvOfpvMWPUf7ppf+JCjzc599WoLonqVjGKqgd45sexWtnmsO9blSLujQDSkxotEQmngObgHCTjDbIvnVgBudY/vtNPMMy7LDoDSctWH+oovmo6AEhm9KYzYPAJhq7Mp/1cCgJz91+2p5mAisL9nT3kDURzFRY16oossuj+QUyLbZ4jJrbEc6/+rEFsCqXgVG7T14KAbpBzsi/u3uL2hED82+HmXY6hWMNqxIV3g=='
         });
         AWS.config.region = 'us-east-1';
 
@@ -532,7 +536,7 @@
                         //output += '<img src="images/' + val.ShortName + '_tn.jpg" alt="' + val.Name + '" />';
                         //output += '<img src=' + urlForCloudImage + val.ShortName + "_tn.jpg alt=" + val.Name + '" />';
                         //output += '<p>' + val.Bio + '</p>';
-                        @{ 
+                        @{
                             string roleName = "";
                             if (identity.IsAuthenticated)
                             {
@@ -542,16 +546,29 @@
                         if ("@roleName" == "True" ) {
                             //output += '<button class="btn btn-warning pull-right" data-toggle="modal" data-target="#editModal" data-talentid="' + val.id + '"><i class="fas fa-edit"></i></button>';
                             //output += '<button id="btnDelete" class="btn btn-danger pull-right" data-toggle="modal" data-target="#deleteModal" data-talentid="' + val.id + '"><i class="fas fa-trash"></i></button>';
-                            output +=   `<button id="btnComment" class="btn btn-success pull-right" data-toggle="modal" data-target="#disqusModal" value=${val.id}><i class="fas fa-comments "></i></button>`
+                            output += '<button class="btn btn-warning pull-right" id="editModal" name="editModal' + val.id + '" data-toggle="modal" data-target="#editModal" value="' + val.id + '"><i class="fas fa-edit"></i></button>';
+                            output += '<button id="btnDelete" name="btnDelete' + val.id + '" class="btn btn-danger pull-right" data-toggle="modal" data-target="#deleteModal" value="' + val.id + '"><i class="fas fa-trash"></i></button>';
+                            output += `<a id="btnComment" href="/Home/Comments/${val.id}" class="btn btn-success pull-right" role="button"><i class="fas fa-comments"></i></a>`
+                            //output += '<button id="btnComment" name="btnComment' + val.id + '" class="btn btn-success pull-right" data-toggle="modal" data-target="#disqusModal" value="' + val.id + '"><i class="fas fa-comments"></i></button>';
+                            //output +=   `<button id="btnComment" name="btnComment${val.id}" class="btn btn-success pull-right" data-toggle="modal" data-target="#disqusModal" value="${val.id}"><i class="fas fa-comments "></i></button>`;
                         }
 
+
+
                         //get the image from cloud hosting
-                        output += '<img src=' + urlForCloudImage + val.shortName + "_tn.jpg alt=" + val.name + '" />';
+
+
+
+                        output += `<img src="${val.image}" alt="${val.name}" />`
+                        //'<img src=' + val.image + '"alt="' + val.name + ' " />';
+                        //  <img src="${val.image}" alt"${val.name}" />
                         output += '<p>' + val.bio + '</p>';
                         output += '</li>';
 
+
+
                         /*Long URL must start with a protocol, bitly can't (and won't) figure out the right protocol.*/
-                        ShortLinkBitly(urlForCloudImage + val.shortName + '_tn.jpg');
+                        ShortLinkBitly(val.image);
                     }
                 });
                 output += '</ul>';
@@ -623,50 +640,120 @@
 
         var talentId;
 
+
+
         $('#addModal').on('shown.bs.modal', function (e) {
             if (sessionStorage.getItem('tokenKey') == null || sessionStorage.getItem('username') == null) {
                 alertDone('Login to access this feature');
+                $.ajax({
+                    type: 'POST',
+                    async: true,
+                    url: '/api/Talent/Add',
+                    data: webFormData,
+                    datatype: 'application/json',
+                    contentType: 'application/x-www-form-urlencoded',
+
+
+
+                }).done(function (data) {
+                    console.dir(data);
+                })
+
+
+
             }
             else {
             }
         });
 
-        //to add
         $('#btnAdd').click(function () {
 
+
+
             alert("Data is being added to Database");
+
+
 
             if ($("#addName").val().trim().length == 0 || $("#addShortName").val().trim().length == 0 || $("#addReknown").val().trim().length == 0 || $("#addImage").val().trim().length == 0 || $("#addBio").val().trim().length == 0) {
                 alert('Please Fill In The Information!');
             }
 
+
+
             else {
-                var talent = {
-                    Name: $('#addName').val(),
-                    ShortName: $('#addShortName').val(),
-                    Reknown: $('#addReknown').val(),
-                    Bio: $('#addBio').val(),
-                    ImageLink: $('#addImage').val(),
-                    CreatedBy: sessionStorage.getItem('username'),
-                    UpdatedBy: sessionStorage.getItem('username')
-                };
+
+                function WebFormData(inName, inShortName, inReknown, inImageURL, inBio) {
+                    this.name = inName;
+                    this.shortName = inShortName;
+                    this.reknown = inReknown;
+                    this.imageURL = inImageURL;
+                    this.bio = inBio
+
+
+
+                } //end of webformdata
+
+
+
+                let collectedName = $('#addName').val();
+                let collectedShortName = $('#addShortName').val();
+                let collectedReknown = $('#addReknown').val();
+                let collectedImageURL = $('#addImage').val();
+                let collectedBio = $('#addBio').val();
+
+
+
+                let webFormData = new WebFormData(collectedName, collectedShortName, collectedReknown, collectedImageURL, collectedBio);
+                console.dir(webFormData);
+
+
 
                 $.ajax({
-                    url: '/api/talents',
-                    headers: { 'Authorization': 'Bearer ' + sessionStorage.getItem('tokenKey') },
-                    cache: false,
                     type: 'POST',
-                    contentType: 'application/json; charset=utf-8',
-                    data: JSON.stringify(talent),
-                    statusCode: {
-                        201: function () {
-                            hideModal();
-                        }
-                    }
-                }).success(function (data) {
-                    hideModal();
-                    window.location.reload();
-                });
+                    async: true,
+                    url: '/api/talents/Add',
+                    data: webFormData,
+                    datatype: 'application/json',
+                    contentType: 'application/x-www-form-urlencoded',
+
+
+
+                }).done(function (data) {
+                    console.dir(data);
+
+
+
+
+                    new Noty({
+                        text: data.message,
+                        theme: 'metroui',
+                        layout: 'center',
+                        type: 'success'
+                    }).show();
+                    setTimeout(function () {
+                        location.reload();
+                        //location.href = "https://localhost:44385/Events/Events";
+                    }, 2000);
+
+
+
+
+                    // location.reload("href);
+                }).fail(function (data) {
+                    console.dir(data);
+                    new Noty({
+                        text: data.responseJSON.message,
+                        theme: 'metroui',
+                        layout: 'center',
+                        type: 'error'
+                    }).show();
+
+
+
+                })
+
+
+
             }
         });
 
@@ -681,38 +768,106 @@
             }
         });
 
+        $(function () {
+            $('#update').on('click', '#editModal', function () {
+                id = $(this).val();
+                loadEdit($(this).val());
+            });
+        })
+        function loadEdit(inId) {
+            $.ajax({
+                method: 'GET',
+                url: `/API/talents/${inId}`,
+                dataType: 'json',
+            }).done(function (data) {
+                console.log(data);
+                $('#editName').val(data.name);
+                $('#editShortName').val(data.shortName);
+                $('#editReknown').val(data.reknown);
+                $('#editImage').val(data.imageURL);
+                $('#editBio').val(data.bio);
+
+
+
+
+            })
+        }
+        $(function () {
+            $('#update').on('click', '#btnDelete', function () {
+                id = $(this).val();
+
+
+
+            });
+        })
+        function WebFormData(inName, inShortName, inReknown, inImageURL, inBio) {
+            this.name = inName;
+            this.shortName = inShortName;
+            this.reknown = inReknown;
+            this.imageURL = inImageURL;
+            this.bio = inBio
+
+
+
+        } //end of webformdata
+
         //to update
         $('#btnSave').click(function () {
             alert("updating...");
+
+
 
             if ($("#editName").val().trim().length == 0 || $("#editShortName").val().trim().length == 0 || $("#editReknown").val().trim().length == 0 || $("#editImage").val().trim().length == 0 || $("#editBio").val().trim().length == 0) {
                 alert('Please Fill In The Information!');
             }
 
+
+
             else {
 
-                var talent = {
-                    Name: $('#editName').val(),
-                    ShortName: $('#editShortName').val(),
-                    Reknown: $('#editReknown').val(),
-                    Bio: $('#editBio').val(),
-                    ImageLink: $('#editImage').val(),
-                    UpdatedBy: sessionStorage.getItem("username")
-                };
+
+
+                let collectedName = $('#editName').val();
+                let collectedShortName = $('#editShortName').val();
+                let collectedReknown = $('#editReknown').val();
+                let collectedImageURL = $('#editImage').val();
+                let collectedBio = $('#editBio').val();
+                console.dir(collectedName, collectedShortName, collectedReknown, collectedImageURL, collectedBio);
+                let webFormData = new WebFormData(collectedName, collectedShortName, collectedReknown, collectedImageURL, collectedBio);
+                console.dir(webFormData);
+
+
+
 
                 $.ajax({
-                    url: '/api/talents/' + talentId,
-                    headers: { 'Authorization': 'Bearer ' + sessionStorage.getItem('tokenKey') },
-                    cache: false,
-                    type: 'PUT',
-                    contentType: 'application/json; charset=utf-8',
-                    data: JSON.stringify(talent),
-                    success: function () {
-                        hideModal();
-                    }
-                }).done(function (response) {
-                    alert(response);
-                });
+                    method: 'PUT',
+                    async: true,
+                    url: `/api/talents/${id}`,
+                    data: webFormData,
+                    datatype: 'application/json',
+                    contentType: 'application/x-www-form-urlencoded',
+
+
+
+                }).done(function (data, textStatus, jqXHR) {
+                    new Noty({
+                        text: data.message,
+                        theme: 'metroui',
+                        layout: 'center',
+                        type: 'success'
+                    }).show();
+                    setTimeout(function () {
+                        location.reload();
+                    }, 2000);
+                }).fail(function (data, textStatus, jqXHR) {
+                    new Noty({
+                        text: data.responseJSON.message,
+                        theme: 'metroui',
+                        layout: 'center',
+                        timeout: 3000,
+                        type: 'error'
+                    }).show();
+                })
             }
         });
 
@@ -728,19 +883,28 @@
 
         //to delete
         $('#btnDelete').click(function () {
-
             $.ajax({
-                url: '/api/talents/' + talentId,
-                headers: { 'Authorization': 'Bearer ' + sessionStorage.getItem('tokenKey') },
-                cache: false,
-                type: 'Delete',
-                contentType: 'application/json; charset=utf-8',
-                success: function () {
-                    hideModal();
-                }
-            }).done(function (data) {
-                alert(data);
-            });
+                method: 'DELETE',
+                url: `/API/talents/${id}`
+            }).done(function (data, textStatus, jqXHR) {
+                new Noty({
+                    text: data.message,
+                    theme: 'metroui',
+                    layout: 'center',
+                    type: 'success'
+                }).show();
+                setTimeout(function () {
+                    location.reload();
+                }, 2000);
+            }).fail(function (data, textStatus, jqXHR) {
+                new Noty({
+                    text: data.responseJSON.message,
+                    theme: 'metroui',
+                    layout: 'center',
+                    timeout: 3000,
+                    type: 'error'
+                }).show();
+            })
         });
 
         //to get info about 1 and display in form
@@ -759,26 +923,8 @@
                 }
             });
         }
-        $('#btnComment').on('click', function () {
-            loadDisqus(this.val());
-        });
-        function loadDisqus(id) {
-            /**
-        *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
-        *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
-
-            var disqus_config = function () {
-                this.page.url = "http://localhost:64084";  // Replace PAGE_URL with your page's canonical URL variable
-                this.page.identifier = id; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
-            };
-
-        (function () { // DON'T EDIT BELOW THIS LINE
-            var d = document, s = d.createElement('script');
-            s.src = 'https://lttalents.disqus.com/embed.js';
-            s.setAttribute('data-timestamp', +new Date());
-            (d.head || d.body).appendChild(s);
-        })();
-        }
         
+
     </script>
+    
 }

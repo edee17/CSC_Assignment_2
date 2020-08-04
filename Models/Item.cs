@@ -7,8 +7,8 @@ namespace TheLifeTimeTalents.Models
 {
     public class Item
     {
-        public int Id { get; set; }
-        public string ReplyDatetime { get; set; }
-        public double Price { get; set; }
+        public string PriceId { get; set; }
+        public int SubBy { get; set; }
+        public string SubId { get; set; }
     }
 }

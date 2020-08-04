@@ -10,7 +10,7 @@ namespace TheLifeTimeTalents.Services.DynamoDBServices
 {
     public interface IPutItem
     {
-        Task AddNewEntry(int id, string replyDateTime);
+        Task AddNewEntry(string priceId, int subBy, string subId);
     }
     public class PutItem
     {
@@ -26,25 +26,25 @@ namespace TheLifeTimeTalents.Services.DynamoDBServices
             await _dynamoClient.PutItemAsync(request);
         }
 
-        public async Task AddNewEntry(int id, string replyDateTime, double price)
+        public async Task AddNewEntry(string priceId, int subBy, string subId)
         {
-            var queryRequest = RequestBuilder(id, replyDateTime, price);
+            var queryRequest = RequestBuilder( priceId, subBy, subId);
 
             await PutItemAsync(queryRequest);
         }
 
-        private PutItemRequest RequestBuilder(int id, string replyDateTime, double price)
+        private PutItemRequest RequestBuilder( string priceId, int subBy, string subId)
         {
             var item = new Dictionary<string, AttributeValue>
             {
-                {"Id", new AttributeValue {N = id.ToString()}},
-                {"ReplyDateTime", new AttributeValue {N = replyDateTime}},
-                {"Price", new AttributeValue {N = price.ToString()}}
+                {"PriceId", new AttributeValue {N = priceId}},
+                {"SubBy", new AttributeValue {N = subBy.ToString()}},
+                {"SubId", new AttributeValue {N = subId}}
             };
 
             return new PutItemRequest
             {
-                TableName = "TempDynamoDbTable",
+                TableName = "SubscriptionTable",
                 Item = item
             };
         }
